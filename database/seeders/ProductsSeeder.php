@@ -18,8 +18,8 @@ class ProductsSeeder extends Seeder
         for ($i = 0; $i <= 100; $i++) {
             DB::table('products')->insert([
                 'name' => Str::random(10),
-                'img' => null,
-                'price' => 3.99
+                'img' => rand(0, 1) ? null : 'https://via.placeholder.com/300',
+                'price' => round(rand(1, 10000) / 100, 2)
             ]);
         }
     }

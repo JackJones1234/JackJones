@@ -38,7 +38,7 @@
                 <td><img src="{{$product->img}}" alt="product_image"></td>
             @endif
             <td>{{$product->price}}</td>
-            <td>Remove | Edit</td>
+            <td><a href="">Remove</a> | <a href="">Edit</a></td>
         </tr>
     @endforeach
 </table>

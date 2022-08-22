@@ -29,7 +29,7 @@ class AdminController extends Controller
     public function dashBoardView()
     {
         $products = Product::all();
-        $admin = 'Bob'; // Implement logic to get current user name
+        $admin = 'Bob';
         return view('dashboard', ['products' => $products, 'admin' => $admin]);
     }
 
