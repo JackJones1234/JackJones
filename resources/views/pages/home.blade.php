@@ -1,9 +1,13 @@
-@include('common/head')
+@include('../common/head')
 
-@include('common/header')
+
 
 {{-- home content --}}
-@include('common/title')
+
+@include('pages.home.components.shippingPromo')
+@include('common/navigation')
+@include('pages.home.components.title')
+<!-- @include('pages.home.components.product') -->
 
 
 @include('common/footer')

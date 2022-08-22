@@ -1,6 +1,6 @@
 {{-- TODO: implement dropdowns for links --}}
 {{-- TODO: recreate for dynamic links --}}
-<nav>
+<nav> 
     <div class="nav-links-left">
         <img src="{{ asset('images/logo.svg') }}" alt="logo" class="logo">
         <ul>

@@ -1,10 +1,12 @@
 // Common globals
-@import 'common/footer';
-@import 'common/header';
+
+@import 'common/shippingPromo';
+@import 'common/navigation';
 @import 'common/mixins';
 @import 'common/typograthy';
 @import 'common/vars';
 @import 'common/helper_classes';
+@import 'common/footer';
 
 // Pages
 @import 'page/homepage/main';

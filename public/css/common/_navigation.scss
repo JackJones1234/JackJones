@@ -59,22 +59,9 @@ nav{
                 }
             }
             li:nth-child(2){
-                margin: 0 25px;
+                display: none;
+                // margin: 0 25px;
             }
         }
     }
-}
-
-.main-page-title{
-    text-align: center;
-    overflow: auto;
-    margin: 64px 0;
-
-    
-    h1{
-        margin-bottom: 37px;
-    }
-}
-.main-page-title{
-    text-align: center;
 }
