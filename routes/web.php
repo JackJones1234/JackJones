@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('welcome');
 });
+
+use App\Http\Controllers\HomeController;
+Route::get('/home', [HomeController::class, 'index']);
