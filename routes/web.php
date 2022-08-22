@@ -22,3 +22,8 @@ Route::get('/admin', function () {
     return view('welcome');
 });
 
+
+Route::get('/footer', function () {
+    return view('footer');
+});
+
