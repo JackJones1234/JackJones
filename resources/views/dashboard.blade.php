@@ -32,7 +32,11 @@
             </td>
             <td>{{$product->id}}</td>
             <td>{{$product->name}}</td>
-            <td>{{$product->img}}</td>
+            @if($product->img == '')
+                <td>Missing image path</td>
+            @else
+                <td><img src="{{$product->img}}" alt="product_image"></td>
+            @endif
             <td>{{$product->price}}</td>
             <td>Remove | Edit</td>
         </tr>
