@@ -35,7 +35,7 @@ Route::get('/admin/resetpass', [AdminController::class, 'resetPassword']);
 Route::get('/admin/dashboard', [AdminController::class, 'dashBoardView']);
 
 
-Route::get('/home', [HomeController::class, 'index']);
+//Route::get('/home', [HomeController::class, 'index']);
 Route::get('/', [HomeController::class, 'index']);
 
 
