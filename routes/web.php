@@ -38,3 +38,9 @@ Route::get('/admin/dashboard', [AdminController::class, 'dashBoardView']);
 Route::get('/home', [HomeController::class, 'index']);
 Route::get('/', [HomeController::class, 'index']);
 
+
+//me testing stuff
+Route::get('/test', function() {
+    return view('pages.home.home');
+});
+
