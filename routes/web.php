@@ -15,9 +15,18 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-// admin
+Route::get('/', function () {
+    return view('welcome');
+
+});
+
 Route::get('/admin', function () {
     return view('admin');
+});
+
+
+Route::get('/footer', function () {
+    return view('footer');
 });
 
 Route::get('/admin/login', [AdminController::class, 'login']);
@@ -25,6 +34,7 @@ Route::get('/admin/login-out', [AdminController::class, 'logOut']);
 Route::get('/admin/resetpass', [AdminController::class, 'resetPassword']);
 Route::get('/admin/dashboard', [AdminController::class, 'dashBoardView']);
 
-// home
+
 Route::get('/home', [HomeController::class, 'index']);
 Route::get('/', [HomeController::class, 'index']);
+
