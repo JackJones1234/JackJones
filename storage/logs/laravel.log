@@ -1,0 +1,32 @@
+[2022-08-22 09:26:03] local.ERROR: There are no commands defined in the "key:" namespace.
+
+Did you mean this?
+    key {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"key:\" namespace.
+
+Did you mean this?
+    key at /home/rihardsratke/JackJones/vendor/symfony/console/Application.php:622)
+[stacktrace]
+#0 /home/rihardsratke/JackJones/vendor/symfony/console/Application.php(673): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /home/rihardsratke/JackJones/vendor/symfony/console/Application.php(259): Symfony\\Component\\Console\\Application->find()
+#2 /home/rihardsratke/JackJones/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#3 /home/rihardsratke/JackJones/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#4 /home/rihardsratke/JackJones/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#5 /home/rihardsratke/JackJones/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
+[2022-08-22 09:26:35] local.ERROR: There are no commands defined in the "key:" namespace.
+
+Did you mean this?
+    key {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"key:\" namespace.
+
+Did you mean this?
+    key at /home/rihardsratke/JackJones/vendor/symfony/console/Application.php:622)
+[stacktrace]
+#0 /home/rihardsratke/JackJones/vendor/symfony/console/Application.php(673): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /home/rihardsratke/JackJones/vendor/symfony/console/Application.php(259): Symfony\\Component\\Console\\Application->find()
+#2 /home/rihardsratke/JackJones/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#3 /home/rihardsratke/JackJones/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#4 /home/rihardsratke/JackJones/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#5 /home/rihardsratke/JackJones/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
