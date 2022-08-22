@@ -19,3 +19,8 @@ storage/logs/laravel.log
 
 /public/css/app.css
 /public/css/app.css.map
+
+/public/css/style.css
+/public/css/style.css.map
+
+/storage/logs/laravel.log
