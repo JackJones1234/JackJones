@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+}
+body nav {
+  display: flex;
+  justify-content: space-between;
+}
+body nav .nav-links-left {
+  display: flex;
+  margin: 16px 0px 16px 64px;
+}
+body nav .nav-links-left .logo {
+  width: 90px;
+  height: 22px;
+  margin-right: 50px;
+}
+body nav .nav-links-left ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+body nav .nav-links-left ul li {
+  list-style: none;
+  margin-right: 16px;
+}
+body nav .nav-links-left ul li a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+}
+body nav .nav-links-left ul li a img {
+  margin-left: 8px;
+  position: relative;
+  top: -1px;
+}
+body nav .nav-panel-right {
+  display: flex;
+  align-items: center;
+}
+body nav .nav-panel-right ul {
+  display: flex;
+  margin: 0 64px 0 0;
+  padding: 0;
+}
+body nav .nav-panel-right ul li {
+  display: flex;
+}
+body nav .nav-panel-right ul li a img {
+  height: 20px;
+  width: 20px;
+}
+body nav .nav-panel-right ul li:nth-child(2) {
+  margin: 0 25px;
+}
+body .main-page-title {
+  text-align: center;
+  overflow: auto;
+  margin: 64px 0;
+}
+body .main-page-title h1 {
+  margin-bottom: 37px;
+}/*# sourceMappingURL=style.css.map */
