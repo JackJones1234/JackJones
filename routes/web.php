@@ -25,3 +25,4 @@ Route::get('/admin', function () {
 Route::get('/admin/login', [AdminController::class, 'login']);
 Route::get('/admin/login-out', [AdminController::class, 'logOut']);
 Route::get('/admin/resetpass', [AdminController::class, 'resetPassword']);
+Route::get('/admin/dashboard', [AdminController::class, 'dashBoardView']);
