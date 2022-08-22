@@ -15,3 +15,5 @@ yarn-error.log
 /.idea
 /.vscode
 storage/logs/laravel.log
+/public/css/style.css
+public/css/style.css.map
