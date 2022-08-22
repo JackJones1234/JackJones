@@ -1,9 +1,13 @@
-<head>
+{{-- <head>
     <!-- push target to head -->
     @stack('styles')
     @stack('scripts')
-</head>
+</head> --}}
 
+
+<head>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+</head>
 
 {{--    Add this code below to blade component to add style or script file to head
 
