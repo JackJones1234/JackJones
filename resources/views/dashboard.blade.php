@@ -24,7 +24,11 @@
     @foreach($products as $product)
         <tr>
             <td>
-                <input type="checkbox">
+                <form method="GET" action="">
+                    <label for="action">
+                        <input name="action" type="checkbox">
+                    </label>
+                </form>
             </td>
             <td>{{$product->id}}</td>
             <td>{{$product->name}}</td>
