@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,7 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('admin');
 });
+
+Route::get('/admin/login', [AdminController::class, 'login']);
+Route::get('/admin/login-out', [AdminController::class, 'logOut']);
+Route::get('/admin/resetpass', [AdminController::class, 'resetPassword']);
