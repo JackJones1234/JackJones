@@ -3,5 +3,12 @@ body{
 
     .main-page-title{
         text-align: center;
+        overflow: auto;
+        margin: 64px 0;
+
+        
+        h1{
+            margin-bottom: 37px;
+        }
     }
 }
