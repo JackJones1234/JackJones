@@ -5,4 +5,5 @@
 
 @section('content')
     @include('pages.home.components.product')
+    @include('pages.home.components.footer')
 @endsection
