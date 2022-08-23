@@ -1,51 +1,33 @@
 @import 'mixins';
 
-$card-height: 300px;
-$card-width: 300px;
-$margin-side: 10px;
-
-@mixin product-card($width, $height, $margin, $font) {
+@mixin product-card($width, $margin, $marginBottom, $font) {
     .product-container {
         flex-wrap: wrap;
         .product-card {
             width: $width;
-            height: $height;
             font-size: $font;
             margin-right: $margin;
+            margin-bottom: $marginBottom;
             img {
                 width: $width;
             }
         }
     }
 }
-@include for-big-desktop-up {
-    $card-width: 300px;
-    $card-height: 360px;
-    $margin-side: 30px;
-    @include product-card($card-width, $card-height, $margin-side, 24px);
-}
-@include for-desktop-up {
-    $card-width: 260px;
-    $card-height: 330px;
-    $margin-side: 25px;
-    @include product-card($card-width, $card-height, $margin-side, 22px);
-}
 
-@include for-tablet-landscape-up {
-    $card-width: 230px;
-    $card-height: 300px;
-    $margin-side: 20px;
-    @include product-card($card-width, $card-height, $margin-side, 20px);
-}
-@include for-tablet-portrait-up {
-    $card-width: 200px;
-    $card-height: 270px;
-    $margin-side: 15px;
-    @include product-card($card-width, $card-height, $margin-side, 18px);
-}
-@include for-phone-only {
-    $card-width: 170px;
-    $card-height: 244px;
-    $margin-side: 10px;
-    @include product-card($card-width, $card-height, $margin-side, 16px);
+@include for-big-desktop-up {
+    $card-width: 20vw;
+    $margin-side: 5vw;
+    $marginBottom: 10vh;
+    @include product-card($card-width, $margin-side, $marginBottom, 24px);
+}@include for-tablet-portrait-up {
+    $card-width: 30vw;
+    $margin-side: 5vw;
+    $marginBottom: 10vh;
+    @include product-card($card-width, $margin-side, $marginBottom, 20px);
+}@include for-phone-only {
+    $card-width: 40vw;
+    $margin-side: 5vw;
+    $marginBottom: 10vh;
+    @include product-card($card-width, $margin-side, $marginBottom, 16px);
 }
