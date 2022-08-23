@@ -1,26 +1,13 @@
-
-h1 {
-    color: red;
-}
-
-.product-card {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-}
-
 body{
     margin: 0;
-
-    .main-page-title{
-        text-align: center;
-    }
 }
 
+@import "components/product";
+
 nav{
-    @import 'common/header';
+    @import '../../common/header';
 }
 
 footer{
-    @import 'common/footer';
+    @import '../../common/footer';
 }
