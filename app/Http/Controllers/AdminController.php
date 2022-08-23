@@ -30,6 +30,11 @@ class AdminController extends Controller
 
     public function logOut()
     {
+        echo Auth::id();
+//        if(Auth::check()) {
+//            return redirect('admin')->with('message', 'passed check func!');
+//        }
+//        return redirect('admin')->with('message', 'Did not pass check func :(((');
         // Need to validate if user is a valid admin;
         // Need to remove login session
     }
