@@ -73,19 +73,22 @@ nav .nav-panel-right ul li:nth-child(2) {
   display: flex;
 }
 
-h1 {
-  color: red;
-}
-
-.product-card {
-  width: 100px;
-  height: 100px;
-  background-color: black;
-}
-
 body {
   margin: 0;
-  background-color: blue;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.product-container .product-card {
+  font-size: 20px;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  background-color: lightblue;
 }
 
 nav nav {
