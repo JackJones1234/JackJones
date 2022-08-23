@@ -6,7 +6,8 @@
         .product-card {
             width: $width;
             font-size: $font;
-            margin-right: $margin;
+            margin-left: calc($margin / 2);
+            margin-right: calc($margin / 2);
             margin-bottom: $marginBottom;
             img {
                 width: $width;

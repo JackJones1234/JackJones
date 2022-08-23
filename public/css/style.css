@@ -150,7 +150,8 @@ body {
   .product-container .product-card {
     width: 20vw;
     font-size: 24px;
-    margin-right: 5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
     margin-bottom: 10vh;
   }
   .product-container .product-card img {
@@ -168,7 +169,8 @@ body {
   .product-container .product-card {
     width: 30vw;
     font-size: 20px;
-    margin-right: 5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
     margin-bottom: 10vh;
   }
   .product-container .product-card img {
@@ -186,7 +188,8 @@ body {
   .product-container .product-card {
     width: 40vw;
     font-size: 16px;
-    margin-right: 5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
     margin-bottom: 10vh;
   }
   .product-container .product-card img {
