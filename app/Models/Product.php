@@ -21,6 +21,8 @@ class Product extends Model
         $product->delete();
     }
 
+
+
     // data should be an array of key and value pairs for name, img, price, TODO: check for invalid keys
     public static function editById(int $id, array $data){
         $product = self::getById($id);

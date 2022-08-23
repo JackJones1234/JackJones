@@ -18,6 +18,7 @@ class AdminController extends Controller
 
     public function logOut()
     {
+        // Need to validate if user is a valid admin;
         // Need to remove login session
     }
 
@@ -28,34 +29,40 @@ class AdminController extends Controller
 
     public function dashBoardView()
     {
-        $products = Product::all();
-        $admin = 'Bob';
-        return view('pages.dashboard', ['products' => $products, 'admin' => $admin]);
-    }
+        // Need to validate if user is a valid admin;
 
+        $products = Product::all();
+        $admin = 'Bob'; // Implement logic to get current user name
+        return view('pages.dashboard.dashboard', ['products' => $products, 'admin' => $admin]);
+    }
     public function viewAddProduct()
     {
+        // Need to validate if user is a valid admin;
         // Render add product form
     }
 
     public function viewEditProduct()
     {
+        // Need to validate if user is a valid admin;
         // Render edit product form
     }
 
     public function saveProduct()
     {
+        // Need to validate if user is a valid admin;
         // Save product action
     }
 
     public function deleteProduct(int $id)
     {
+        // Need to validate if user is a valid admin;
         $products = Product::getById($id);
         $products->delete();
     }
 
     public function massDelete(array $ids)
     {
+        // Need to validate if user is a valid admin;
         foreach ($ids as $id) {
             Product::deleteById($id);
         }
