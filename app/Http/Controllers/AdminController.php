@@ -30,7 +30,7 @@ class AdminController extends Controller
     {
         $products = Product::all();
         $admin = 'Bob';
-        return view('dashboard', ['products' => $products, 'admin' => $admin]);
+        return view('pages.dashboard.dashboard', ['products' => $products, 'admin' => $admin]);
     }
 
     public function viewAddProduct()
