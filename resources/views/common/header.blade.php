@@ -23,7 +23,7 @@
     </div>
 </nav>
 <hr>
-<div class="mobile-nav">
+<div class="mobile-nav hide-menu hide-menu-visually">
     <div class="mobile-menu">
         <ul>
             <li><a href="#">Bags<img src="{{ asset('icons/arrow.svg') }}" alt="navSpan" class="nav-span"></a></li>
