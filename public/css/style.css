@@ -3,11 +3,19 @@ h1 {
 }
 
 .site-footer {
+<<<<<<< HEAD
   padding: 63.5px;
   display: grid;
   grid-template-columns: repeat(1fr, 1fr);
   grid-template-rows: repeat(1, 1fr);
   align-items: center;
+=======
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  outline: 2px solid red;
+>>>>>>> 085261c981d8c80b4aad09e0de4e9c11fff879b8
 }
 
 .footer-label {
@@ -17,6 +25,7 @@ h1 {
 }
 
 .footer-label > input {
+<<<<<<< HEAD
   border: 1px solid #b82121;
   cursor: pointer;
 }
@@ -45,6 +54,20 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+=======
+  border: 1px solid #7d7d7d;
+  cursor: pointer;
+}
+
+.footer-links {
+  padding: 10px;
+  text-decoration: none;
+}
+
+@media (max-width: 599px) {
+  .site-footer {
+    background-color: aqua;
+>>>>>>> 085261c981d8c80b4aad09e0de4e9c11fff879b8
   }
 }
 nav {
@@ -115,34 +138,54 @@ nav .nav-panel-right ul li:nth-child(2) {
 @font-face {
   font-family: Assistant-ExtraLight;
   src: url(../../fonts/Assistant-ExtraLight.ttf);
+<<<<<<< HEAD
   font-weight: 200;
+=======
+>>>>>>> 085261c981d8c80b4aad09e0de4e9c11fff879b8
 }
 @font-face {
   font-family: Assistant-Light;
   src: url(../../fonts/Assistant-Light.ttf);
+<<<<<<< HEAD
   font-weight: 300;
+=======
+>>>>>>> 085261c981d8c80b4aad09e0de4e9c11fff879b8
 }
 @font-face {
   font-family: Assistant-Regular;
   src: url(../../fonts/Assistant-Regular.ttf);
+<<<<<<< HEAD
   font-weight: 400;
+=======
+>>>>>>> 085261c981d8c80b4aad09e0de4e9c11fff879b8
 }
 @font-face {
   font-family: Assistant-SemiBold;
   src: url(../../fonts/Assistant-SemiBold.ttf);
+<<<<<<< HEAD
   font-weight: 600;
+=======
+>>>>>>> 085261c981d8c80b4aad09e0de4e9c11fff879b8
 }
 @font-face {
   font-family: Assistant-Bold;
   src: url(../../fonts/Assistant-Bold.ttf);
+<<<<<<< HEAD
   font-weight: 700;
+=======
+>>>>>>> 085261c981d8c80b4aad09e0de4e9c11fff879b8
 }
 @font-face {
   font-family: Assistant-ExtraBold;
   src: url(../../fonts/Assistant-ExtraBold.ttf);
+<<<<<<< HEAD
   font-weight: 900;
 }
 @media (min-width: 600px) {
+=======
+}
+@media (max-width: 599px) {
+>>>>>>> 085261c981d8c80b4aad09e0de4e9c11fff879b8
   .hidden-mobile {
     display: none;
   }
@@ -157,16 +200,26 @@ nav .nav-panel-right ul li:nth-child(2) {
 body {
   margin: 0;
   background-color: white;
+<<<<<<< HEAD
   font-family: Assistant-Regular;
+=======
+  font-family: Assistant-Light;
+>>>>>>> 085261c981d8c80b4aad09e0de4e9c11fff879b8
 }
 
 .main-container {
   max-width: 90%;
   margin: auto;
+<<<<<<< HEAD
   outline: 1px solid yellow;
 }
 
 @media (min-width: 2000px) {
+=======
+}
+
+@media (max-width: 2000px) {
+>>>>>>> 085261c981d8c80b4aad09e0de4e9c11fff879b8
   .product-container {
     flex-wrap: wrap;
   }
@@ -184,7 +237,11 @@ body {
     transition: 0.6s;
   }
 }
+<<<<<<< HEAD
 @media (min-width: 900px) {
+=======
+@media (max-width: 900px) {
+>>>>>>> 085261c981d8c80b4aad09e0de4e9c11fff879b8
   .product-container {
     flex-wrap: wrap;
   }
@@ -202,7 +259,11 @@ body {
     transition: 0.6s;
   }
 }
+<<<<<<< HEAD
 @media (min-width: 600px) {
+=======
+@media (max-width: 599px) {
+>>>>>>> 085261c981d8c80b4aad09e0de4e9c11fff879b8
   .product-container {
     flex-wrap: wrap;
   }
@@ -290,11 +351,19 @@ h1 {
 }
 
 .site-footer {
+<<<<<<< HEAD
   padding: 63.5px;
   display: grid;
   grid-template-columns: repeat(1fr, 1fr);
   grid-template-rows: repeat(1, 1fr);
   align-items: center;
+=======
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  outline: 2px solid red;
+>>>>>>> 085261c981d8c80b4aad09e0de4e9c11fff879b8
 }
 
 .footer-label {
@@ -304,6 +373,7 @@ h1 {
 }
 
 .footer-label > input {
+<<<<<<< HEAD
   border: 1px solid #b82121;
   cursor: pointer;
 }
@@ -332,5 +402,19 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+=======
+  border: 1px solid #7d7d7d;
+  cursor: pointer;
+}
+
+.footer-links {
+  padding: 10px;
+  text-decoration: none;
+}
+
+@media (max-width: 599px) {
+  .site-footer {
+    background-color: aqua;
+>>>>>>> 085261c981d8c80b4aad09e0de4e9c11fff879b8
   }
 }/*# sourceMappingURL=style.css.map */
