@@ -9,6 +9,6 @@ class ProductController extends Controller
 {
     public function index($id) {
         $model = new Product();
-        return view('pages.product.product', ['id' => $id]);
+        return view('pages.product', ['id' => $id]);
     }
 }
