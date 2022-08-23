@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,5 @@ Route::get('/admin/login', [AdminController::class, 'login']);
 Route::get('/admin/login-out', [AdminController::class, 'logOut']);
 Route::get('/admin/resetpass', [AdminController::class, 'resetPassword']);
 Route::get('/admin/dashboard', [AdminController::class, 'dashBoardView']);
+
+Route::get('/product/{id}', [ProductController::class, 'index']);

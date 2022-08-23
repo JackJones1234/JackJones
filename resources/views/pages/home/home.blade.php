@@ -9,6 +9,7 @@
     @include('common.title')
     @include('common.product')
     @include('common.footer')
-    
+
+    <script src="{{ asset('js/home/app.js') }}"></script>
 </div>
 @endsection
