@@ -38,6 +38,7 @@
                 <td><img src="{{$product->img}}" alt="product_image"></td>
             @endif
             <td>{{$product->price}}</td>
+            <!-- implement urls to controllers with ids !-->
             <td><a href="">Remove</a> | <a href="">Edit</a></td>
         </tr>
     @endforeach
