@@ -21,10 +21,12 @@ class Product extends Model
         $product->delete();
     }
 
-    // data should be an array of key and value pairs for name, img, price
-    public static function editById(int $id, $data){
+    // data should be an array of key and value pairs for name, img, price, TODO: check for invalid keys
+    public static function editById(int $id, array $data){
         $product = self::getById($id);
-        $product::where('id', $id)->update(['name' => $data['name'], 'img' => $data['img'], 'price' => $data['price']]);
-
+        
+        foreach($data as $key => $value) {
+            $product::where('id', $id)->update([$key => $value]);
+        }
     }
 }
