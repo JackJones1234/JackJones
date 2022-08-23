@@ -1,0 +1,10 @@
+.hidden-mobile{
+    @include for-phone-only(){
+        display: none;
+    }
+}
+
+
+.flex {
+    display: flex;
+}
