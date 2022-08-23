@@ -1,10 +1,18 @@
+
+
 body{
     margin: 0;
+    background-color: white;
+    // font-family: Assistant-Regular;
+    font-family: Assistant-Light;
+    // font-weight: 600;
 }
 
 .main-container {
     max-width: 90%;
     margin: auto;
+    outline: 1px solid yellow;
+
 }
 
 @import "../../common/product";

@@ -1,3 +1,6 @@
+@import 'mixins';
+
+
 
 h1 {
     color:aquamarine;
@@ -6,7 +9,35 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    outline: 1px solid red;
+    padding: 20px 0 ;
+    outline: 2px solid red;
     // flex-direction: column;
 
+}
+
+.footer-label{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.footer-label > input{
+    border: 1px solid #7d7d7d;
+    cursor: pointer;
+}
+
+
+
+.footer-links{
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+@include for-phone-only {
+
+    .site-footer{
+        background-color: aqua;
+        // flex-direction: column;
+    }
+    
 }
