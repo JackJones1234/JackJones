@@ -9,6 +9,6 @@
                 <div>${{ $data->price }}</div>
             </div>
         </div>
-        <a href="http://127.0.0.1:8000/">go back</a>
+        <a href="{{ url('') }}">go back</a>
     </div>
 @endsection
