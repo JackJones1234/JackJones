@@ -1,0 +1,155 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-links-left {
+  display: flex;
+  margin: 16px 0px 16px 64px;
+}
+nav .nav-links-left .logo {
+  width: 90px;
+  height: 22px;
+  margin-right: 50px;
+}
+nav .nav-links-left ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav .nav-links-left ul li {
+  list-style: none;
+  margin-right: 16px;
+}
+nav .nav-links-left ul li a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+}
+nav .nav-links-left ul li a img {
+  margin-left: 8px;
+  position: relative;
+  top: -1px;
+}
+nav .nav-panel-right {
+  display: flex;
+  align-items: center;
+}
+nav .nav-panel-right ul {
+  display: flex;
+  margin: 0 64px 0 0;
+  padding: 0;
+}
+nav .nav-panel-right ul li {
+  display: flex;
+}
+nav .nav-panel-right ul li a img {
+  height: 20px;
+  width: 20px;
+}
+nav .nav-panel-right ul li:nth-child(2) {
+  margin: 0 25px;
+}
+
+.main-page-title {
+  text-align: center;
+  overflow: auto;
+  margin: 64px 0;
+}
+.main-page-title h1 {
+  margin-bottom: 37px;
+}
+
+.main-page-title {
+  text-align: center;
+}
+
+@media (max-width: 599px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+body {
+  margin: 0;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.product-container .product-card {
+  font-size: 20px;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  background-color: lightblue;
+}
+
+nav nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav nav .nav-links-left {
+  display: flex;
+  margin: 16px 0px 16px 64px;
+}
+nav nav .nav-links-left .logo {
+  width: 90px;
+  height: 22px;
+  margin-right: 50px;
+}
+nav nav .nav-links-left ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav nav .nav-links-left ul li {
+  list-style: none;
+  margin-right: 16px;
+}
+nav nav .nav-links-left ul li a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+}
+nav nav .nav-links-left ul li a img {
+  margin-left: 8px;
+  position: relative;
+  top: -1px;
+}
+nav nav .nav-panel-right {
+  display: flex;
+  align-items: center;
+}
+nav nav .nav-panel-right ul {
+  display: flex;
+  margin: 0 64px 0 0;
+  padding: 0;
+}
+nav nav .nav-panel-right ul li {
+  display: flex;
+}
+nav nav .nav-panel-right ul li a img {
+  height: 20px;
+  width: 20px;
+}
+nav nav .nav-panel-right ul li:nth-child(2) {
+  margin: 0 25px;
+}
+nav .main-page-title {
+  text-align: center;
+  overflow: auto;
+  margin: 64px 0;
+}
+nav .main-page-title h1 {
+  margin-bottom: 37px;
+}
+nav .main-page-title {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
