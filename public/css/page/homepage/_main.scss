@@ -1,13 +1,21 @@
+
+
 body{
     margin: 0;
+    background-color: white;
+    // font-family: Assistant-Regular;
+    font-family: Assistant-Light;
+    // font-weight: 600;
 }
 
-@import "components/product";
-
-nav{
-    @import '../../common/header';
+.main-container {
+    max-width: 90%;
+    margin: auto;
 }
 
-footer{
-    @import '../../common/footer';
-}
+@import "../../common/product";
+
+@import '../../common/header';
+
+@import '../../common/footer';
+
