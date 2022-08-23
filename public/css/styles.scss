@@ -1,0 +1,11 @@
+// Common globals
+@import "common/footer";
+@import "common/header";
+@import "common/mixins";
+@import "common/typography";
+@import "common/vars";
+@import "common/helper_classes";
+
+// Pages
+@import "pages/home";
+@import "pages/admin/dashboard";
