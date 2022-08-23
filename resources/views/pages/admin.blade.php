@@ -26,5 +26,9 @@
     @if(session()->has('message'))
     <div>{{ session()->get('message') }}</div>
     @endif
+    @if(Auth::check())
+        <a href="{{ url('admin/login-out') }}">Logout page</a>
+        <a href="{{ url('admin/dashboard') }}">Dashboard page</a>
+    @endif
 </body>
 </html>
