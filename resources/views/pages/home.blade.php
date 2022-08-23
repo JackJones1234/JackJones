@@ -13,3 +13,4 @@
     <script src="{{ asset('js/home/app.js') }}"></script>
 </div>
 @endsection
+

@@ -1,4 +1,7 @@
-<footer class="main-container">
+
+<!-- <footer>footer</footer> -->
+<script src="{{ asset('js/navigation.js') }}"></script>
+<footer class="footer-container">
     <div class="site-footer">
         <div class="footer-inputs">
             <label class="footer-label" for="country">Country/region
@@ -72,12 +75,15 @@
                     <path d="M8.971 10.268L9.745 12.144H8.203L8.971 10.268ZM25.046 10.346H22.069V11.173H24.998V12.412H22.075V13.334H25.052V14.073L27.129 11.828L25.052 9.488L25.046 10.346ZM10.983 8.006H14.978L15.865 9.941L16.687 8H27.057L28.135 9.19L29.25 8H34.013L30.494 11.852L33.977 15.68H29.143L28.065 14.49L26.94 15.68H10.03L9.536 14.49H8.406L7.911 15.68H4L7.286 8H10.716L10.983 8.006ZM19.646 9.084H17.407L15.907 12.62L14.282 9.084H12.06V13.894L10 9.084H8.007L5.625 14.596H7.18L7.674 13.406H10.27L10.764 14.596H13.484V10.661L15.235 14.602H16.425L18.165 10.673V14.603H19.623L19.647 9.083L19.646 9.084ZM28.986 11.852L31.517 9.084H29.695L28.094 10.81L26.546 9.084H20.652V14.602H26.462L28.076 12.864L29.624 14.602H31.499L28.987 11.852H28.986Z" fill="white" />
                 </svg>
             </a>
-
+            <br>
         </div>
+        <span class="footer-span">
+            © 2021, dawn-theme-default Powered by Shopify
+        </span>
     </div>
 </footer>
 
-{{-- <style>
+<style>
     h1 {
         color: aquamarine;
     }
@@ -86,4 +92,4 @@
         display: flex;
         /* flex-direction: column; */
     }
-</style> --}}
+</style>
