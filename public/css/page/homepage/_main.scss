@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+}
+
+@import "components/product";
+
+nav{
+    @import '../../common/header';
+}
+
+footer{
+    @import '../../common/footer';
+}
