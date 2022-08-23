@@ -21,11 +21,11 @@
     }
 }
 
-@include for-big-desktop-up {
-    $card-width: 20vw;
+@include for-phone-only {
+    $card-width: 40vw;
     $margin-side: 5vw;
     $marginBottom: 10vh;
-    @include product-card($card-width, $margin-side, $marginBottom, 24px);
+    @include product-card($card-width, $margin-side, $marginBottom, 16px);
 }
 
 @include for-tablet-landscape-up {
@@ -35,9 +35,9 @@
     @include product-card($card-width, $margin-side, $marginBottom, 20px);
 }
 
-@include for-phone-only {
-    $card-width: 40vw;
+@include for-desktop-up {
+    $card-width: 20vw;
     $margin-side: 5vw;
     $marginBottom: 10vh;
-    @include product-card($card-width, $margin-side, $marginBottom, 16px);
+    @include product-card($card-width, $margin-side, $marginBottom, 24px);
 }

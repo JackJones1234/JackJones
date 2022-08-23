@@ -16,12 +16,15 @@
     <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
         <form action="{{url('/admin/login')}}" method="post">
             @csrf
-            <input name="email">
-            <input name="password" type="password">
+            <input name="email" placeholder="email">
+            <input name="password" type="password" placeholder="password">
             <button type="submit">Login</button>
         </form>
     </div>
-
     <a href="{{url('')}}" aria-label="go to storefront">Go to storefront</a>
+</div>
+    @if(session()->has('message'))
+    <div>{{ session()->get('message') }}</div>
+    @endif
 </body>
 </html>

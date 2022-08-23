@@ -23,10 +23,11 @@ Route::get('/admin', function () {
     return view('pages.admin');
 });
 
-Route::get('/admin/login', [AdminController::class, 'login']);
 Route::get('/admin/login-out', [AdminController::class, 'logOut']);
 Route::get('/admin/resetpass', [AdminController::class, 'resetPassword']);
 Route::get('/admin/dashboard', [AdminController::class, 'dashBoardView']);
 Route::get('/admin/product/delete/{$id}', [AdminController::class, 'deleteProduct']);
 Route::get('/admin/product/massDelete/{$id}', [AdminController::class, 'massDelete']);
 Route::get('/product/{id}', [ProductController::class, 'index']);
+
+Route::post('/admin/login', [AdminController::class, 'login']);

@@ -6,14 +6,26 @@ use App\Models\Product;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function login()
+    public function login(Request $request)
     {
-        // Need to create login session
+        $request->validate([
+            'email' => 'required',
+           'password' => 'required'
+        ]);
+
+        $credentials = $request->only('email', 'password');
+        if(Auth::attempt($credentials)) {
+            return redirect('admin')->with('message', 'Login successful');
+        }
+
+        return redirect('admin')->with('message', 'Login details are not valid');
     }
 
     public function logOut()
