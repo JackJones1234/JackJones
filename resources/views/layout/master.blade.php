@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    @include('common.head')
+    @include('common.head', ['scss' => $scss])
 <body>
-    @yield('content')  
+    @yield('content')
 </body>
 </html>

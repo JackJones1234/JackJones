@@ -9,6 +9,7 @@ class ProductController extends Controller
 {
     public function index($id) {
         $model = new Product();
-        return view('pages.product', ['id' => $id]);
+        $data = json_decode($model::getById($id))[0];
+        return view('pages.product', ['data' => $data]);
     }
 }
