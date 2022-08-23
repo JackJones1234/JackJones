@@ -19,7 +19,7 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/admin', function () {
-    return view('pages.admin');
+    return view('pages.admin.admin');
 });
 
 Route::get('/admin/login', [AdminController::class, 'login']);
