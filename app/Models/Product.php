@@ -20,4 +20,11 @@ class Product extends Model
         $product = self::getById($id);
         $product->delete();
     }
+
+    // data should be an array of key and value pairs for name, img, price
+    public static function editById(int $id, $data){
+        $product = self::getById($id);
+        $product::where('id', $id)->update(['name' => $data['name'], 'img' => $data['img'], 'price' => $data['price']]);
+
+    }
 }
