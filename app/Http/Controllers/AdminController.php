@@ -29,10 +29,10 @@ class AdminController extends Controller
     public function dashBoardView()
     {
         $products = Product::all();
-        $admin = 'Bob';
-        return view('dashboard', ['products' => $products, 'admin' => $admin]);
-    }
 
+        $admin = 'Bob'; // Implement logic to get current user name
+        return view('pages.dashboard.dashboard', ['products' => $products, 'admin' => $admin]);
+    }
     public function viewAddProduct()
     {
         // Render add product form
@@ -60,4 +60,5 @@ class AdminController extends Controller
             Product::deleteById($id);
         }
     }
+
 }
