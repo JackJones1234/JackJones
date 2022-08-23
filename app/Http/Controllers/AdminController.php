@@ -33,7 +33,7 @@ class AdminController extends Controller
 
         $products = Product::all();
         $admin = 'Bob'; // Implement logic to get current user name
-        return view('pages.dashboard.dashboard', ['products' => $products, 'admin' => $admin]);
+        return view('pages.dashboard', ['products' => $products, 'admin' => $admin]);
     }
     public function viewAddProduct()
     {
