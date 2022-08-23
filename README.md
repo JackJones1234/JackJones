@@ -22,8 +22,12 @@ cp .env.example .env
 php artisan key:generate
 php artisan migrate:fresh
 php artisan db:seed --class=ProductsSeeder
+php artisan db:seed --class=AdminSeeder
 php artisan serve
 ```
+
+## Admin account
+admin:option123
 
 ## Workflow
 
