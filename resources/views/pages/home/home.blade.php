@@ -9,5 +9,6 @@
     @include('common.title')
     @include('common.product')
     @include('common.footer')
+    
 </div>
 @endsection
