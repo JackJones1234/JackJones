@@ -3,11 +3,11 @@ h1 {
 }
 
 .site-footer {
-  display: flex;
-  justify-content: space-between;
+  padding: 63.5px;
+  display: grid;
+  grid-template-columns: repeat(1fr, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   align-items: center;
-  padding: 20px 0;
-  outline: 2px solid red;
 }
 
 .footer-label {
@@ -17,18 +17,34 @@ h1 {
 }
 
 .footer-label > input {
-  border: 1px solid #7d7d7d;
+  border: 1px solid #b82121;
   cursor: pointer;
 }
 
+span {
+  font-family: "Assistant-Regular";
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.footer-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4px;
+  padding: 24px 0 16px 0;
+}
+
 .footer-links {
-  padding: 10px;
   text-decoration: none;
 }
 
-@media (max-width: 599px) {
+@media (min-width: 600px) {
   .site-footer {
-    background-color: aqua;
+    background-color: #4de211;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 nav {
@@ -99,28 +115,34 @@ nav .nav-panel-right ul li:nth-child(2) {
 @font-face {
   font-family: Assistant-ExtraLight;
   src: url(../../fonts/Assistant-ExtraLight.ttf);
+  font-weight: 200;
 }
 @font-face {
   font-family: Assistant-Light;
   src: url(../../fonts/Assistant-Light.ttf);
+  font-weight: 300;
 }
 @font-face {
   font-family: Assistant-Regular;
   src: url(../../fonts/Assistant-Regular.ttf);
+  font-weight: 400;
 }
 @font-face {
   font-family: Assistant-SemiBold;
   src: url(../../fonts/Assistant-SemiBold.ttf);
+  font-weight: 600;
 }
 @font-face {
   font-family: Assistant-Bold;
   src: url(../../fonts/Assistant-Bold.ttf);
+  font-weight: 700;
 }
 @font-face {
   font-family: Assistant-ExtraBold;
   src: url(../../fonts/Assistant-ExtraBold.ttf);
+  font-weight: 900;
 }
-@media (max-width: 599px) {
+@media (min-width: 600px) {
   .hidden-mobile {
     display: none;
   }
@@ -135,7 +157,7 @@ nav .nav-panel-right ul li:nth-child(2) {
 body {
   margin: 0;
   background-color: white;
-  font-family: Assistant-Light;
+  font-family: Assistant-Regular;
 }
 
 .main-container {
@@ -144,7 +166,7 @@ body {
   outline: 1px solid yellow;
 }
 
-@media (max-width: 2000px) {
+@media (min-width: 2000px) {
   .product-container {
     flex-wrap: wrap;
   }
@@ -162,7 +184,7 @@ body {
     transition: 0.6s;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .product-container {
     flex-wrap: wrap;
   }
@@ -180,7 +202,7 @@ body {
     transition: 0.6s;
   }
 }
-@media (max-width: 599px) {
+@media (min-width: 600px) {
   .product-container {
     flex-wrap: wrap;
   }
@@ -268,11 +290,11 @@ h1 {
 }
 
 .site-footer {
-  display: flex;
-  justify-content: space-between;
+  padding: 63.5px;
+  display: grid;
+  grid-template-columns: repeat(1fr, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   align-items: center;
-  padding: 20px 0;
-  outline: 2px solid red;
 }
 
 .footer-label {
@@ -282,17 +304,33 @@ h1 {
 }
 
 .footer-label > input {
-  border: 1px solid #7d7d7d;
+  border: 1px solid #b82121;
   cursor: pointer;
 }
 
+span {
+  font-family: "Assistant-Regular";
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.footer-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4px;
+  padding: 24px 0 16px 0;
+}
+
 .footer-links {
-  padding: 10px;
   text-decoration: none;
 }
 
-@media (max-width: 599px) {
+@media (min-width: 600px) {
   .site-footer {
-    background-color: aqua;
+    background-color: #4de211;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=style.css.map */
