@@ -2,6 +2,6 @@
 <html lang="en">
     @include('common.head')
 <body>
-    @yield('content')  
+    @yield('content')
 </body>
 </html>

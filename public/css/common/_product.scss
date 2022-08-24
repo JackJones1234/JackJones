@@ -1,17 +1,19 @@
-@import 'mixins';
-
 @mixin product-card($width, $margin, $marginBottom, $font) {
     .product-container {
         flex-wrap: wrap;
+
         .product-card {
             width: $width;
             font-size: $font;
-            margin-right: $margin;
+            margin-left: calc($margin / 2);
+            margin-right: calc($margin / 2);
             margin-bottom: $marginBottom;
+
             img {
                 width: $width;
             }
         }
+
         .product-card:hover {
             box-shadow: 5px 5px 10px #888888;
             transition: 0.6s;
@@ -19,19 +21,39 @@
     }
 }
 
-@include for-big-desktop-up {
-    $card-width: 20vw;
-    $margin-side: 5vw;
-    $marginBottom: 10vh;
-    @include product-card($card-width, $margin-side, $marginBottom, 24px);
-}@include for-tablet-portrait-up {
-    $card-width: 30vw;
-    $margin-side: 5vw;
-    $marginBottom: 10vh;
-    @include product-card($card-width, $margin-side, $marginBottom, 20px);
-}@include for-phone-only {
+@include product-card(40vw, 5vw, 10vh, 16px);
+
+@include for-phone-only {
     $card-width: 40vw;
     $margin-side: 5vw;
     $marginBottom: 10vh;
     @include product-card($card-width, $margin-side, $marginBottom, 16px);
 }
+
+@include for-tablet-landscape-up {
+    $card-width: 30vw;
+    $margin-side: 5vw;
+    $marginBottom: 10vh;
+    @include product-card($card-width, $margin-side, $marginBottom, 20px);
+}
+
+@include for-desktop-up {
+    $card-width: 20vw;
+    $margin-side: 5vw;
+    $marginBottom: 10vh;
+    @include product-card($card-width, $margin-side, $marginBottom, 24px);
+}
+
+/* appear on scroll ******************************* */
+.product-card {
+    opacity: 0%;
+    transform: translateY(50px);
+    transition: 0.5s all ease-in-out;
+}
+
+.appear {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* *********************************************** */
