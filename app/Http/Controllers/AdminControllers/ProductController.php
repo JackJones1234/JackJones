@@ -30,19 +30,18 @@ class ProductController extends Controller
     }
 
     public function store(Request $request) {
-        $model = new Product();
-        $model->name = $request->input('product_name');
-        $model->price = $request->input('product_price');
         $request->validate([
             'product_name' => 'required',
             'product_price' => 'required|integer',
             'product_image' => 'required|mimes:png,jpg,svg|max:2048'
-            ]);
-        
+        ]);
+        $model = new Product();
+        $model->name = $request->input('product_name');
+        $model->price = $request->input('product_price');
         try {
             $file= $request->file('product_image');
             $model->img = $file->getClientOriginalName();
-            $file->move(public_path('images'), $file->getClientOriginalName());
+            $file->move(public_path('images/product'), $file->getClientOriginalName());
         } catch(Exception $e) {
             echo $e->getMesssage();
         }
