@@ -33,8 +33,8 @@ class AdminController extends Controller
         if(Auth::check()) {
             Session::flush();
             Auth::logout();
-            return redirect('admin');
         }
+        return redirect('admin');
     }
 
     public function resetPassword()
