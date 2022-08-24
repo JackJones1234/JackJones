@@ -11,7 +11,7 @@
     @include('common.footer')
 
 
-@include('common/title')
+
 
     <script src="{{ asset('js/home/app.js') }}"></script>
     {{-- TODO: download --}}
