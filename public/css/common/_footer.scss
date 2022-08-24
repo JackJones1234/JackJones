@@ -1,5 +1,3 @@
-@import 'mixins';
-
 .site-footer{
     padding: 63.5px;
     display: grid;
@@ -60,5 +58,6 @@ span{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background-color: #b82121;
     }
 }
