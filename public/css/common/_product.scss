@@ -21,7 +21,7 @@
     }
 }
 
-@include product-card(40vw, 5vw, 10vh, 16px);
+// @include product-card(40vw, 5vw, 10vh, 16px);
 
 @include for-phone-only {
     $card-width: 40vw;
