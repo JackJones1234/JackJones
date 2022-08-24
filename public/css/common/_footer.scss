@@ -1,10 +1,7 @@
-h1 {
-    color:aquamarine;
-}
 .site-footer{
     padding: 63.5px;
     display: grid;
-    grid-template-columns: repeat(1fr, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     align-items: center;
 //     grid-template-rows: repeat(1fr, 1fr, 1fr));
@@ -46,7 +43,6 @@ span{
 
 @include for-phone-only {
     .site-footer{
-        background-color: #4de211;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

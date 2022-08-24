@@ -3,7 +3,7 @@
 <script src="{{ asset('js/navigation.js') }}"></script>
 <footer class="footer-container">
     <div class="site-footer">
-        <div class="footer-inputs">
+        <div class="footer-inputs footer-grid-item">
             <label class="footer-label" for="country">Country/region
                 <input list="countries" id="country" name="country">
                 <datalist id="countries">
@@ -23,7 +23,7 @@
                 </datalist>
             </label>
         </div>
-        <div class="footer-icons">
+        <div class="footer-icons footer-grid-item">
             <a href="#" class="footer-links">
                 <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.07" d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="black" />
@@ -77,19 +77,9 @@
             </a>
             <br>
         </div>
-        <span class="footer-span">
+        <span class="footer-span footer-grid-item">
             © 2021, dawn-theme-default Powered by Shopify
         </span>
     </div>
 </footer>
 
-<style>
-    h1 {
-        color: aquamarine;
-    }
-
-    .site-footer {
-        display: flex;
-        /* flex-direction: column; */
-    }
-</style>
