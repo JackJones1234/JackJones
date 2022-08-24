@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminControllers\ProductController;
+use App\Http\Controllers\CartController;
 
 
 /*
@@ -20,6 +21,8 @@ use App\Http\Controllers\AdminControllers\ProductController;
 
 Route::get('/', [HomeController::class, 'index'])->name('login');
 Route::get('/product/{id}', [\App\Http\Controllers\ProductController::class, 'index']);
+
+Route::post('/cart', [CartController::class, 'index']);
 
 Route::get('/admin', function () {
     return view('admin.admin') ;
