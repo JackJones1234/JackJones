@@ -21,14 +21,8 @@
     }
 }
 
-@include product-card(50vw, 5vw, 10vh, 16px);
 
-// @include for-phone-only {
-//     $card-width: 40vw;
-//     $margin-side: 5vw;
-//     $marginBottom: 10vh;
-//     @include product-card($card-width, $margin-side, $marginBottom, 16px);
-// }
+@include product-card(50vw, 5vw, 10vh, 16px);
 
 @include for-tablet-portrait-up {
     $card-width: 30vw;
