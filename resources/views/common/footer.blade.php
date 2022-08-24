@@ -1,6 +1,6 @@
 
 <!-- <footer>footer</footer> -->
-<script src="{{ asset('js/navigation.js') }}"></script>
+{{-- <script src="{{ asset('js/navigation.js') }}"></script> --}}
 <footer class="footer-container">
     <div class="site-footer">
         <div class="footer-inputs footer-grid-item">
