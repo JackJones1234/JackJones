@@ -126,6 +126,7 @@ nav{
     background-color: white;
     transition: all 0.5s linear;
     display: block;
+    z-index: 1;
     
     .mobile-menu{
         overflow: auto;
@@ -162,6 +163,7 @@ nav{
         background-color: #F0F0F0;
         height: 20%;
         overflow:auto;
+        width: 90%;
         
         a{
             text-decoration: none;
