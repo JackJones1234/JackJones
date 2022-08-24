@@ -9,11 +9,7 @@
     @include('common.title')
     @include('common.product')
     @include('common.footer')
-
-
-@include('common/title')
-
-    <script src="{{ asset('js/home/app.js') }}"></script>
+    <script src="{{ asset('js/home/app.js')}}"></script>
     <script src="{{ asset('js/navigation.js')}}"></script>
 </div>
 @endsection
