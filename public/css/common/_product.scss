@@ -1,11 +1,13 @@
 .product-container {
     display: grid;
+    justify-content: center;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 20vw));
+    grid-template-columns: repeat(auto-fill, minmax(10.625rem, max-content));
 }
 
 .product-card {
-    min-height: 250px;
+    // grid-column-end: span 4;
+    min-height: 10.625rem;
     background-image: url(../../images/product/Mobile/product.png);
     background-size: cover;
     background-repeat: no-repeat;

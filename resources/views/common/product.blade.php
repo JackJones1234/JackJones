@@ -1,4 +1,4 @@
-<div class="product-container flex-center">
+<div class="product-container">
     @foreach($products as $product)
         <div class="product-card" onclick="openProduct(this)" data-id="{{ $product->id }}" data-tilt data-tilt-speed="5000">
             <div class="product-info">
