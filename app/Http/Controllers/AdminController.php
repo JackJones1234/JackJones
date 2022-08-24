@@ -22,7 +22,7 @@ class AdminController extends Controller
 
         $credentials = $request->only('email', 'password');
         if(Auth::attempt($credentials)) {
-            return redirect('admin/dashboard')->with('message', 'Login successful');
+            return redirect('admin/product')->with('message', 'Login successful');
         }
 
         return redirect('admin')->with('message', 'Login details are not valid');
@@ -33,9 +33,8 @@ class AdminController extends Controller
         if(Auth::check()) {
             Session::flush();
             Auth::logout();
-            return redirect('admin')->with('message', 'You have been logged out :D!');
+            return redirect('admin');
         }
-       return redirect('admin')->with('message', 'Did not pass check func :(((');
     }
 
     public function resetPassword()
@@ -43,14 +42,6 @@ class AdminController extends Controller
         // Need to allow reset password
     }
 
-    public function dashBoardView()
-    {
-        // Need to validate if user is a valid admin;
-
-        $products = Product::all();
-        $admin = 'Bob'; // Implement logic to get current user name
-        return view('pages.dashboard', ['products' => $products, 'admin' => $admin]);
-    }
     public function viewAddProduct()
     {
         // Need to validate if user is a valid admin;

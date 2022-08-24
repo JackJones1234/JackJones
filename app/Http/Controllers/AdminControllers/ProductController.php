@@ -8,6 +8,11 @@ use App\Models\Product;
 
 class ProductController extends Controller
 {
+
+    public function __construct() {
+        $this->middleware("auth");
+    }
+
     public function other($id) {
         $model = new Product();
         $data = json_decode($model::getById($id))[0];
@@ -30,7 +35,7 @@ class ProductController extends Controller
         $model->price = $request->input('product_price');
         $request->validate([
             'product_name' => 'required',
-            'product_price' => 'required',
+            'product_price' => 'required|integer',
             'product_image' => 'required|mimes:png,jpg,svg|max:2048'
             ]);
         
@@ -44,5 +49,35 @@ class ProductController extends Controller
         
         
         $model->save();
+
+        return redirect('/');
+    }
+
+    public function edit($id) {
+        $product = Product::where('id', $id)->first();
+        return view('admin.product.edit', ['product' => $product]);
+    }
+
+    public function delete(Request $request) {
+        $idToDelete = $request->input('product_id');
+        $model = new Product();
+        $model->where('id', $idToDelete)->delete();
+        return redirect('/admin/product')->with('message', 'Product deleted!');
+    }
+
+    public function storeEdit(Request $request) {
+        $request->validate([
+            'product_name' => 'required',
+            'product_price' => 'required|integer',
+            // 'product_image' => 'required|mimes:png,jpg,svg|max:2048'
+        ]);
+
+        $productData = Product::find($request->input('product_id'));
+        $productData->name = $request->input('product_name');
+        $productData->price = $request->input('product_price');
+        // $productData->img = $request->input('pr')  
+        $productData->save();
+
+        return redirect('/admin/product')->with('message', 'Product updated successfully!');
     }
 }
