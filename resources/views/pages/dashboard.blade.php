@@ -11,6 +11,7 @@
 <body class="antialiased">
 <div class="action">
     <button>Add</button>
+    <button>Product managment</button>
 </div>
 <table>
     <tr>
