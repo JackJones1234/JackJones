@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Session;
 use App\Models\Product;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -22,7 +22,7 @@ class AdminController extends Controller
 
         $credentials = $request->only('email', 'password');
         if(Auth::attempt($credentials)) {
-            return redirect('admin')->with('message', 'Login successful');
+            return redirect('admin/dashboard')->with('message', 'Login successful');
         }
 
         return redirect('admin')->with('message', 'Login details are not valid');
@@ -30,13 +30,12 @@ class AdminController extends Controller
 
     public function logOut()
     {
-        echo Auth::id();
-//        if(Auth::check()) {
-//            return redirect('admin')->with('message', 'passed check func!');
-//        }
-//        return redirect('admin')->with('message', 'Did not pass check func :(((');
-        // Need to validate if user is a valid admin;
-        // Need to remove login session
+        if(Auth::check()) {
+            Session::flush();
+            Auth::logout();
+            return redirect('admin')->with('message', 'You have been logged out :D!');
+        }
+       return redirect('admin')->with('message', 'Did not pass check func :(((');
     }
 
     public function resetPassword()
