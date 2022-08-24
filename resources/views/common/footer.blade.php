@@ -3,7 +3,7 @@
 <script src="{{ asset('js/navigation.js') }}"></script>
 <footer class="footer-container">
     <div class="site-footer">
-        <div class="footer-inputs grid-item">
+        <div class="footer-inputs footer-grid-item">
             <label class="footer-label" for="country">Country/region
                 <input list="countries" id="country" name="country">
                 <datalist id="countries">
@@ -23,7 +23,8 @@
                 </datalist>
             </label>
         </div>
-        <div class="footer-icons grid-item">
+        <div class="footer-icons footer-grid-item">
+
             <a href="#" class="footer-links">
                 <img src="{{ asset('images/footer/svg/visa.svg') }}">
                 <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,8 +79,10 @@
             </a>
             <br>
         </div>
-        <span class="footer-span grid-item">
+        <span class="footer-span footer-grid-item">
             © 2021, dawn-theme-default Powered by Shopify
         </span>
     </div>
 </footer>
+
+
