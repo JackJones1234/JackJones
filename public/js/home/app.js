@@ -3,7 +3,9 @@ function openProduct(event) {
     location.replace("http://127.0.0.1:8000/product/" + id);
 }
 
-// appear on scroll **********************************************
+// animations ****************************************************
+
+// appear on scroll
 const products = document.querySelectorAll(".product-card");
 
 window.addEventListener("load", showOnScroll);
@@ -19,5 +21,11 @@ function showOnScroll() {
         }
     }
 }
+
+// tilt effect
+products.forEach((e) => {
+    e.setAttribute("data-tilt", "");
+    e.setAttribute("data-tilt-speed", "5000");
+});
 
 // ***************************************************************
