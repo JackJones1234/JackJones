@@ -11,10 +11,12 @@ const products = document.querySelectorAll(".product-card");
 window.addEventListener("load", showOnScroll);
 window.addEventListener("scroll", showOnScroll);
 function showOnScroll() {
+    console.log('īm here');
     let screenPos = window.innerHeight;
     for (let i = 0; i < products.length; i++) {
         let imgPos = products[i].getBoundingClientRect().top;
         if (imgPos < screenPos) {
+            console.log('ādded appear')
             products[i].classList.add("appear");
         } else {
             products[i].classList.remove("appear"); // optional
@@ -29,3 +31,5 @@ products.forEach((e) => {
 });
 
 // ***************************************************************
+
+// import '../navigation';

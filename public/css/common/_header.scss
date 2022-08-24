@@ -123,11 +123,15 @@ nav{
     height: 100%;
     width: 100%;
     position: fixed;
+    background-color: white;
+    transition: all 0.5s linear;
+    display: block;
+    z-index: 1;
     
     .mobile-menu{
         overflow: auto;
         height: 80%;
-        top: 0;
+        width: 90%;
 
         ul{
             list-style: none;
@@ -149,6 +153,7 @@ nav{
 
                     img{
                         float:right;
+                        margin-right: 30px;
                     }
                 }
             }
@@ -158,6 +163,7 @@ nav{
         background-color: #F0F0F0;
         height: 20%;
         overflow:auto;
+        width: 90%;
         
         a{
             text-decoration: none;
@@ -171,8 +177,14 @@ nav{
             }
         }
     }
+    
 }
-
+.hide-menu{
+    display: none;
+}
+.hide-menu-visually{
+    opacity: 0;
+}
 
 
 
