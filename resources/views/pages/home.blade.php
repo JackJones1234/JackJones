@@ -1,9 +1,20 @@
-@include('common/head')
-@include('common/header')
+{{-- @include('common/header')
+@include('common/footer') --}}
 
-{{-- home content --}}
+@extends('layout.master')
+
+@section('content')
+<div class="main-container">
+    @include('common.header')
+    @include('common.title')
+    @include('common.product')
+    @include('common.footer')
 
 
 @include('common/title')
 
-@include('common/footer')
+    <script src="{{ asset('js/home/app.js') }}"></script>
+</div>
+@endsection
+
+

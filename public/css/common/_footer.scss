@@ -1,0 +1,54 @@
+h1 {
+    color:aquamarine;
+}
+.site-footer{
+    padding: 63.5px;
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-items: center;
+//     grid-template-rows: repeat(1fr, 1fr, 1fr));
+//     grid-gap: 10px 10px;
+//     padding: 20px 0;
+//     // outline: 2px solid red;
+//     // flex-direction: column;
+}
+
+
+.footer-label{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.footer-label > input{
+    border: 1px solid #b82121;
+    cursor: pointer;
+}
+span{
+    font-family: 'Assistant-Regular';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+}
+
+.footer-icons{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+    padding: 24px 0 16px 0;
+}
+
+.footer-links{
+    text-decoration: none;
+}
+
+
+@include for-phone-only {
+    .site-footer{
+        background-color: #4de211;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
