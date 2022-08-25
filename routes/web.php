@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminControllers\ProductController;
 use App\Http\Controllers\CartController;
-
+use App\Models\Cart;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +22,8 @@ use App\Http\Controllers\CartController;
 Route::get('/', [HomeController::class, 'index'])->name('login');
 Route::get('/product/{id}', [\App\Http\Controllers\ProductController::class, 'index']);
 
-Route::post('/cart', [CartController::class, 'index']);
+Route::match(['GET', 'POST'],'/cart', [CartController::class, 'index']);
+
 
 Route::get('/admin', function () {
     return view('admin.admin') ;
@@ -41,3 +42,6 @@ Route::post('/admin/product/delete', [ProductController::class, 'delete']);
 Route::post('/admin/product/edit', [ProductController::class, 'storeEdit']);
 
 Route::post('/cart/edit', [CartController::class, 'edit']);
+Route::get('/cart', [CartController::class, 'index']);
+Route::post('/cart/add', [CartController::class, 'addToCart']);
+Route::get('/cart/delete/{id}', [CartController::class, 'delete']);

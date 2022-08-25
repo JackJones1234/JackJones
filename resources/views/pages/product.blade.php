@@ -10,7 +10,7 @@
             </div>
         </div>
         <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, dignissimos ea eos esse fugit illo laboriosam magni mollitia non odio odit optio quam, sed ullam vel veniam voluptate. Modi, tempore?</div>
-        <form action="/cart" method="POST">
+        <form action="/cart/add" method="POST">
             @csrf
             <input type="number" name="product_quantity" min="1" max="100" value="1">
             <input type="submit" value="ADD TO CART">
