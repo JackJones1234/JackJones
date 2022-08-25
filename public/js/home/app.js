@@ -27,8 +27,3 @@ function showOnScroll() {
 // ***************************************************************
 
 // import '../navigation';
-
-window.addEventListener('load', (event) => {
-    document.cookie = "username=test_cookie";
-
-  });

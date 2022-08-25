@@ -6,7 +6,6 @@
               <div class="product-info">
                 <div>{{ $product->name }}</div>
                 <div>${{ $product->price }}</div>
-                <img src="{{ asset('images/product/'. $product->img) }}" alt="">
             </div>
         </div>
     @endforeach
