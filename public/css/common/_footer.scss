@@ -16,6 +16,10 @@ footer {
         display: flex;
         gap: 25px;
 
+        @include for-mobile-down {
+            gap: 12px;
+        }
+
         .footer-select {
             display: flex;
             flex-direction: column;
@@ -45,13 +49,17 @@ footer {
         display: flex;
         align-items: flex-end;
         gap: 26px;
+
+        @include for-mobile-down {
+            gap: 6px;
+        }
     }
 
     .trademark {
         font-size: 10px;
         text-align: center;
 
-        @include for-tablet-portrait-up {
+        @include for-mobile-up {
             display: none;
         }
     }
