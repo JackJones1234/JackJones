@@ -18,7 +18,7 @@
     </div>
     <div class="cart-wrapper">
         <h1>shopping cart</h1>
-
+        @include('common.cart')
     </div>
     <div class="payment-wrapper">
         <h1>payment</hi>
@@ -50,17 +50,17 @@
                     <option value='10'>October</option>
                     <option value='11'>November</option>
                     <option value='12'>December</option>
-                </select> 
+                </select>
                 <select name='expireYY' id='expireYY'>
                     <option value=''>Year</option>
                     <option value='22'>2022</option>
                     <option value='23'>2023</option>
                     <option value='24'>2025</option>
                     <option value='22'>2026</option>
-                </select> 
+                </select>
                 <input class="card-expire-date" type="text"/>
             </div>
-            
+
     </div>
 
 @endsection
