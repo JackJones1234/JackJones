@@ -32,3 +32,26 @@ deleteBtns.forEach(element => {
         .catch()
     })
 });
+
+const totalField = document.querySelector('.total');
+totalField.innerHTML = 'total: ' + getTotal();
+
+function getTotal() {
+    const prices = document.querySelectorAll('.price');
+    const quantities = document.querySelectorAll('.quantity');
+    let total = 0;
+    for(let i = 0; i < prices.length; i++) {
+        const price = getPrice(prices[i]);
+        const quantity = getQuantity(quantities[i]);
+        total += price * quantity;
+    }
+    return total;
+}
+
+function getPrice(price) {
+    return parseFloat(price.innerHTML.substring(13));
+}
+
+function getQuantity(quantity) {
+    return parseFloat(quantity.innerHTML.substring(10));
+}
