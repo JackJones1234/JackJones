@@ -56,6 +56,14 @@ span{
     font-size: 10px;
     text-align: center;
 }
+@include for-phone-only {
+    .footer-span{
+        display: none;
+    }
+    
+}
+
+
 
 .footer-icons{
     display: flex;
@@ -73,7 +81,8 @@ span{
 @include for-phone-only {
     .footer-container{
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
+        align-items: center;
     }
+
 }
