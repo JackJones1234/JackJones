@@ -67,7 +67,7 @@ class ProductController extends Controller
     public function storeEdit(Request $request) {
         $request->validate([
             'product_name' => 'required',
-            'product_price' => 'required|integer',
+            'product_price' => 'required|numeric',
             // 'product_image' => 'required|mimes:png,jpg,svg|max:2048'
         ]);
 
