@@ -43,3 +43,4 @@ Route::post('/admin/product/delete', [ProductController::class, 'delete']);
 Route::post('/admin/product/edit', [ProductController::class, 'storeEdit']);
 
 Route::get('/checkout', [CheckoutController::class, 'index']);
+

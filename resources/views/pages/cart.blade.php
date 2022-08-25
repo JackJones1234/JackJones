@@ -18,7 +18,7 @@
                     <div class="price">Price for 1: {{ $product['product']->price }}</div>
                     <form action="">
                         @csrf
-                        <input type="number" name="quantity" min="1" max="100" value={{ $product['quantity']}}>
+                        <input type="number" name="quantity" min="1" max="100" value="{{ $product['quantity'] }}">
                         <input type="hidden" name="old_quantity" value="{{ $product['quantity'] }}">
                         <input type="submit" value="Change" class="update">
                         <input type="hidden" value="{{ $product['product']->id}}" name="product_id">
