@@ -57,14 +57,12 @@ class CartController extends Controller
     }
 
     public function delete($id) {
-
         $model = new Cart();
         $model
-        ->where('cart_id', $_COOKIE['cart'])
-        ->where('product_id', $id)
-        ->first()
-        ->delete();
-
+            ->where('cart_id', $_COOKIE['cart'])
+            ->where('product_id', $id)
+            ->first()
+            ->delete();
         return json_encode(['result' => 'deleted']);
     }
 }

@@ -7,8 +7,8 @@
     @include('common.header')
     <div class="main-container">
         @yield('content')
-        @include('common.footer')
     </div>
+    @include('common.footer')
 </body>
 
 <script>

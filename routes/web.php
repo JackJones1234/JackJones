@@ -20,30 +20,24 @@ use App\Models\Cart;
 
 
 Route::get('/', [HomeController::class, 'index'])->name('login');
+
 Route::get('/product/{id}', [\App\Http\Controllers\ProductController::class, 'index']);
 
 Route::match(['GET', 'POST'],'/cart', [CartController::class, 'index']);
-
+Route::post('/cart/edit', [CartController::class, 'edit']);
+Route::get('/cart', [CartController::class, 'index']);
+Route::post('/cart/add', [CartController::class, 'addToCart']);
+Route::get('/cart/delete/{id}', [CartController::class, 'delete']);
 
 Route::get('/admin', function () {
     return view('admin.admin') ;
 });
-
 Route::get('/admin/logout', [AdminController::class, 'logOut']);
-//Route::get('/admin/resetpass', [AdminController::class, 'resetPassword']);
-//Route::get('/admin/product/massDelete/{$id}', [AdminController::class, 'massDelete']);
 Route::get('/admin/product', [ProductController::class, 'index']);
 Route::get('/admin/product/add', [ProductController::class, 'add']);
 Route::post('/admin/login', [AdminController::class, 'login']);
 Route::post('/admin/product/store', [ProductController::class, 'store']);
-
 Route::get('/admin/product/edit/{id}', [ProductController::class, 'edit']);
 Route::post('/admin/product/delete', [ProductController::class, 'delete']);
 Route::post('/admin/product/edit', [ProductController::class, 'storeEdit']);
 
-Route::post('/cart/edit', [CartController::class, 'edit']);
-Route::get('/cart', [CartController::class, 'index']);
-Route::post('/cart/add', [CartController::class, 'addToCart']);
-
-Route::get('/cart/delete/{id}', [CartController::class, 'delete']);
-Route::post('cart/delete/{id}', [CartController::class], 'delete');
