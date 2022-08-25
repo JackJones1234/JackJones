@@ -41,3 +41,7 @@ Route::get('/admin/product/edit/{id}', [ProductController::class, 'edit']);
 Route::post('/admin/product/delete', [ProductController::class, 'delete']);
 Route::post('/admin/product/edit', [ProductController::class, 'storeEdit']);
 
+//vajag uztaisit ar controller
+Route::get('/checkout', function () {
+    return view('pages.checkout') ;
+});
