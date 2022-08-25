@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CheckoutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminControllers\ProductController;
@@ -41,7 +42,5 @@ Route::get('/admin/product/edit/{id}', [ProductController::class, 'edit']);
 Route::post('/admin/product/delete', [ProductController::class, 'delete']);
 Route::post('/admin/product/edit', [ProductController::class, 'storeEdit']);
 
-//vajag uztaisit ar controller
-Route::get('/checkout', function () {
-    return view('pages.checkout') ;
-});
+Route::get('/checkout', [CheckoutController::class, 'index']);
+
