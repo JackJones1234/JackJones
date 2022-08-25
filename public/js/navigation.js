@@ -6,7 +6,6 @@ toggleButton.addEventListener(
     "click",
     function () {
         if (menu.classList.contains("hide-menu")) {
-            console.log("removing hide menu classes");
             menu.classList.remove("hide-menu");
             setTimeout(function () {
                 menu.classList.remove("hide-menu-visually");
