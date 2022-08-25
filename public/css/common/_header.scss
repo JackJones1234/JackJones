@@ -1,59 +1,60 @@
-hr{
+hr {
     margin: 0;
 }
-.nav-wrapper{
+.nav-wrapper {
     position: sticky;
-    top:0px;
+    z-index: 10;
+    top: 0px;
     background-color: white;
     z-index: 1;
-    nav{
+
+    nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         overflow: hidden;
-    
-        .nav-links-left{
+
+        .nav-links-left {
             display: flex;
-            
+
             // margin: 16px 0px 16px 64px;
-    
-            .hamb{
+
+            .hamb {
                 cursor: pointer;
                 float: right;
                 padding: 40px 20px;
-    
+
                 .hamb-line {
                     background: black;
                     display: block;
                     height: 2px;
                     position: relative;
                     width: 24px;
-                
                 } /* Style span tag */
-                
+
                 .hamb-line::before,
-                .hamb-line::after{
+                .hamb-line::after {
                     background: black;
-                    content: '';
+                    content: "";
                     display: block;
                     height: 100%;
                     position: absolute;
-                    transition: all .2s ease-out;
+                    transition: all 0.2s ease-out;
                     width: 100%;
                 }
-                .hamb-line::before{
+                .hamb-line::before {
                     top: 10px;
                 }
-                .hamb-line::after{
+                .hamb-line::after {
                     top: -10px;
                 }
             }
-            
-            .side-menu{
+
+            .side-menu {
                 display: none;
             }
-    
-            .side-menu:checked ~ nav{
+
+            .side-menu:checked ~ nav {
                 max-height: 100%;
             }
             .side-menu:checked ~ .hamb .hamb-line {
@@ -61,16 +62,17 @@ hr{
             }
             .side-menu:checked ~ .hamb .hamb-line::before {
                 transform: rotate(-45deg);
-                top:0;
+                top: 0;
             }
             .side-menu:checked ~ .hamb .hamb-line::after {
                 transform: rotate(45deg);
-                top:0;
+                top: 0;
             }
-    
-            img{
-                display:none;
+
+            img {
+                display: none;
             }
+
             a{
                 text-decoration: none;
                 color: black;
@@ -101,12 +103,31 @@ hr{
                     .nav-span2{
                         margin-left: 15px;
                         height: 10px;
-                        // width: 15px;
                     }
                 }
                 a:hover{
                     background-color: rgb(221, 221, 221);
                     transition: all 0.5s linear;
+                }
+            }
+            ul {
+                display: none;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        display: flex;
+
+                        .nav-span2 {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                li:nth-child(2) {
+                    margin: 0 16px;
                 }
             }
             .dropdown-middle{
@@ -119,71 +140,67 @@ hr{
                 margin-left: 10px;
             }
         }
-        .logo{
+
+        .logo {
             margin-right: 10px;
-            
-            img{
+            img {
                 width: 90px;
                 height: 22px;
             }
-
         }
         
+        .nav-panel-right {
 
-        .nav-panel-right{
             display: flex;
             align-items: center;
-    
-            ul{
+
+            ul {
                 display: flex;
                 padding: 0;
                 margin: 0;
-    
-                li{
+
+                li {
                     display: flex;
-    
-                    a{
-    
-                        img{
+
+                    a {
+                        img {
                             height: 20px;
                             width: 20px;
                         }
                     }
                 }
-                li:last-child{
-                    margin-left:30px;
+                li:last-child {
+                    margin-left: 30px;
                 }
             }
         }
     }
 }
-
-
-.mobile-nav{
+.mobile-nav {
     height: 100%;
     width: 100%;
     position: fixed;
     background-color: white;
-    transition: all 0.5s linear;
+    transition: all 0.125s linear;
     display: block;
     z-index: 1;
-    
-    .mobile-menu{
+
+    .mobile-menu {
         overflow: auto;
         height: 100%;
         width: 90%;
 
-        ul{
+        ul {
             list-style: none;
             margin: 64px 32px 0 32px;
             overflow: auto;
             padding-left: 0;
 
-            li{
+            li {
                 margin: 10px 0;
                 overflow: auto;
 
-                a{  
+                a {
                     display: block;
                     text-decoration: none;
                     color: black;
@@ -191,35 +208,33 @@ hr{
                     line-height: 15px;
                     margin: 12px 0;
 
-                    img{
-                        float:right;
+                    img {
+                        float: right;
                         margin-right: 30px;
                     }
                 }
             }
         }
     }
-    
 }
-.hide-menu{
+.hide-menu {
     display: none;
 }
-.hide-menu-visually{
+.hide-menu-visually {
     opacity: 0;
 }
 
-
 @include for-phone-only {
-    .nav-wrapper{
-        nav{
-            .nav-links-left{
-                ul{
+    .nav-wrapper {
+        nav {
+            .nav-links-left {
+                ul {
                     display: flex;
                 }
-                img{
+                img {
                     display: block;
                 }
-                label{
+                label {
                     display: none;
                 }
                 a{
@@ -230,9 +245,10 @@ hr{
                 }
             }
             }
-            .logo{
+            .logo {
                 display: none;
             }
             
     }
+
 }

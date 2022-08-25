@@ -18,7 +18,7 @@ class ProductsSeeder extends Seeder
         for ($i = 0; $i <= 20; $i++) {
             DB::table('products')->insert([
                 'name' => Str::random(10),
-                'img' => rand(0, 1) ? null : 'https://via.placeholder.com/300',
+                'img' => 'product.png',
                 'price' => round(rand(1, 10000) / 100, 2)
             ]);
         }

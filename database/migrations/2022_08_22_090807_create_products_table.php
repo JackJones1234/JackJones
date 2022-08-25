@@ -16,7 +16,7 @@ return new class extends Migration {
             $table->id();
             $table->string('name');
             $table->string('img')
-                ->default('https://via.placeholder.com/300')
+                ->default('product.png')
                 ->nullable(true);
             $table->decimal('price');
             $table->timestamps();

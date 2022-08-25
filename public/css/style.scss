@@ -1,4 +1,5 @@
 // Common globals
+
 @import 'common/vars';
 @import 'common/mixins';
 @import 'common/helper_classes';
@@ -6,11 +7,10 @@
 @import 'common/header';
 @import 'common/typograthy';
 @import 'common/title';
+@import 'common/cart';
 
 // Pages
-@import 'page/homepage/main';
-@import 'page/admin/main';
-@import 'page/listing/main';
-// @import 'page/login/main';
-@import 'page/product/main';
+@import "pages/admin/login";
 
+@import "pages/home";
+@import "pages/product";
