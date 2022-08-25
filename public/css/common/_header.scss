@@ -130,9 +130,6 @@ hr {
                     margin: 0 16px;
                 }
             }
-            .dropdown-middle{
-
-            }
 
             a{
                 display: none;
@@ -224,7 +221,7 @@ hr {
     opacity: 0;
 }
 
-@include for-phone-only {
+@include for-mobile-up {
     .nav-wrapper {
         nav {
             .nav-links-left {

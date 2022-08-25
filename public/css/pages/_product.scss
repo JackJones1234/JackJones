@@ -1,66 +1,71 @@
 
 .main-container{
 
+   .product-wrapper{
+      margin: 30px 0;
 
-   .single-product-container {
-      display: flex;
-       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-
-      .product-card{
-         opacity: 1;
-         min-width: 95%;
-         box-shadow: none;
-         background: none;
-         margin-top: 10px;
-
+      .single-product-container {
+         display: flex;
+          flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         height: 100%;
+   
+         .product-card{
+            opacity: 1;
+            min-width: 95%;
+            box-shadow: none;
+            background: none;
+            margin-top: 10px;
+   
+         }
       }
-   }
-   .product-name{
-      font-size: 20px;
-      padding-top: 50px;
-   }
-   .product-price{
-      margin-top:15px;
-   }
-   form{
-      margin-top: 10px;
-
-      .quantity{
-         display:inline-block;
-         border: 1px solid rgb(230, 230, 230);
-         padding: 10px;
-         margin-bottom: 10px;
-
-         #quantity, #quantity-add, #quantity-remove{
-            border: none;
+      .product-name{
+         font-size: 20px;
+         padding-top: 50px;
+      }
+      .product-price{
+         margin-top:15px;
+      }
+      form{
+         margin-top: 10px;
+   
+         .quantity{
+            display:inline-block;
+            border: 1px solid rgb(230, 230, 230);
+            padding: 10px;
+            margin-bottom: 10px;
+   
+            #quantity, #quantity-add, #quantity-remove{
+               border: none;
+               background: none;
+               cursor: pointer;
+            }
+            #quantity{
+               width: 70px;
+               text-align: center;
+            }
+         }
+         #button-submit, #button-buyitnow{
             background: none;
             cursor: pointer;
+            padding:10px;
+            min-width: 100%;
+            border: 2px solid black;
          }
-         #quantity{
-            width: 70px;
-            text-align: center;
+         #button-buyitnow{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            padding:10px;
+            margin-top: 10px;
          }
-      }
-      #button-submit, #button-buyitnow{
-         background: none;
-         cursor: pointer;
-         padding:10px;
-         min-width: 100%;
-         border: 2px solid black;
-      }
-      #button-buyitnow{
-         background-color: black;
-         color: white;
-         cursor: pointer;
-         padding:10px;
-         margin-top: 10px;
       }
    }
+
+   
 }
-@include for-phone-only{
+@include for-mobile-up{
    .main-container{
       .single-product-container{
          .product-card{
@@ -73,6 +78,7 @@
    .product-wrapper{
       display: flex;
       justify-content: space-between;
+
 
       .single-product-container{
          margin-top: 20px;

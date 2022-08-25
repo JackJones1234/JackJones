@@ -3,7 +3,6 @@
 
 @section('content')
 <div class="main-container">
-    @include('common.header')
     <div class="product-wrapper">
         <div class="single-product-container">
             <div class="product-card">
@@ -27,7 +26,6 @@
             </form>
         </div>
     </div>
-    @include('common.footer')
 </div>
 <script src="{{ asset('js/productQuantity.js')}}"></script>
 <script src="{{ asset('js/navigation.js')}}"></script>

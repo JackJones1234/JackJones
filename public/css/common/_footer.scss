@@ -1,88 +1,66 @@
-.footer-container{
-    padding: 40px 10px;
-    display: grid;
-    justify-content: center;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr, 1fr));
-}
-.grid-item{
-    outline: 1px solid black;
-}
-.footer-label{
-    font-family: Assistant-Regular;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 45px;
-    letter-spacing: 0.03em;
-}
-.footer-inputs{
+footer {
+    padding: 65px 0;
     display: flex;
-    gap: 0.5rem;
-    padding-bottom: 10px;
-}
-.footer-select{
-    border: 1px solid #7D7D7D;
-    background-color: inherit;
-    font-size: 0.8125rem;
-    padding: 0.78125rem 2.5rem 0.78125rem 0.6875em;
-    color: $color;
-    appearance: none;
-    cursor: pointer;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid #d0d0d0;
+    color: #121212bf;
 
-    &:focus{
-        outline: 0;
-        box-shadow: 0 0 2px #7D7D7D;
-        transition: 0.2ms;
-        // outline-offset: 0;
-    }
-}
-.footer-select-container{
-    position: relative;
-
-    & .footer-select-arrow{
-        position: absolute;
-        padding: 0.5rem;
-        top: 0;
-        right: 0;
-        height: 100%;
-        pointer-events: none;
-    }
-}
-
-span{
-    font-family: 'Assistant-Regular';
-    font-weight: 400;
-    font-size: 10px;
-    text-align: center;
-}
-@include for-phone-only {
-    .footer-span{
-        display: none;
-    }
-    
-}
-
-
-
-.footer-icons{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 4px;
-    padding:  0;
-}
-
-.footer-links{
-    text-decoration: none;
-    cursor: pointer;
-}
-
-@include for-phone-only {
-    .footer-container{
-        display: flex;
-        justify-content: space-between;
+    @include for-tablet-portrait-down {
+        flex-direction: column;
         align-items: center;
+        gap: 25px;
     }
 
+    .footer-selects {
+        display: flex;
+        gap: 25px;
+
+        @include for-mobile-down {
+            gap: 12px;
+        }
+
+        .footer-select {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-size: 13px;
+            }
+
+            select {
+                background-color: transparent;
+                color: inherit;
+                font-size: 13px;
+                margin-top: 12px;
+                padding: 12.5px 25px 12.5px 12.5px;
+                appearance: none;
+                position: relative;
+                // TODO: move to icons
+                background-image: url(../../icons/arrow-down.svg);
+                background-repeat: no-repeat;
+                background-position-x: 95%;
+                background-position-y: center;
+            }
+        }
+    }
+
+    .footer-icons {
+        display: flex;
+        align-items: flex-end;
+        gap: 26px;
+
+        @include for-mobile-down {
+            gap: 6px;
+        }
+    }
+
+    .trademark {
+        font-size: 10px;
+        text-align: center;
+
+        @include for-mobile-up {
+            display: none;
+        }
+    }
 }
