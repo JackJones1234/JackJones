@@ -1,7 +1,6 @@
 body {
-    margin: 0;
-    background-color: white;
-    font-family: Assistant-Regular;
+    background-color: rgb(243, 243, 243);
+    font-family: "Assistant-Regular";
 }
 
 .main-container {
@@ -22,10 +21,6 @@ body {
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgb(172, 170, 170);
     cursor: pointer;
-
-    &:hover img {
-        filter: blur(1.5px);
-    }
 
     img {
         width: 100%;
@@ -55,7 +50,7 @@ body {
 .product-card {
     opacity: 0%;
     transition-property: opacity;
-    transition-duration: 0.6s;
+    transition-duration: 1s;
     transition-timing-function: ease-in-out;
     transform-style: preserve-3d;
 }
