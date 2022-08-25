@@ -3,7 +3,7 @@
 @section('content')
 
 @include('common.title')
-{{-- @include('common.product') --}}
+@include('common.product')
 
 <script src="{{ asset('js/home/app.js') }}"></script>
 {{-- TODO: download --}}
