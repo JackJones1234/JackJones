@@ -4,10 +4,26 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
+    @include('common.header')
     <div class="main-container">
-        @include('common.header')
         @yield('content')
         @include('common.footer')
     </div>
 </body>
+
+<script>
+    // make page span full height if not enough content (footer at bottom)
+window.addEventListener("load", () => {
+    const mainContainer = document.querySelector(".main-container");
+    let navHeight = document
+        .querySelector("header")
+        .getBoundingClientRect().height;
+    let footerHeight = document
+        .querySelector("footer")
+        .getBoundingClientRect().height;
+
+    mainContainer.style.minHeight = `calc(100vh - ${navHeight}px - ${footerHeight}px)`;
+});
+</script>
+
 </html>

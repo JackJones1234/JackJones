@@ -2,7 +2,6 @@
 
 
 @section('content')
-<div class="main-container">
     <div class="product-wrapper">
         <div class="single-product-container">
             <div class="product-card">
@@ -26,8 +25,7 @@
             </form>
         </div>
     </div>
-</div>
-<script src="{{ asset('js/productQuantity.js')}}"></script>
-<script src="{{ asset('js/navigation.js')}}"></script>
+
+    <script src="{{ asset('js/productQuantity.js')}}"></script>
 @endsection
 

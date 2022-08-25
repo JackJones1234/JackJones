@@ -1,48 +1,47 @@
 {{-- TODO: implement dropdowns for links --}}
 {{-- TODO: recreate for dynamic links --}}
-<hr>
-<div class="nav-wrapper">
+<header>
     <nav>
         <div class="nav-links-left">
             <input class="side-menu" type="checkbox" id="side-menu"/>
             <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-            <a href="{{ url('') }}"><img src="{{ asset('images/logo.svg') }}" alt="logo" class="logo"></a>
+            <img src="{{ asset('images/logo.svg') }}" alt="logo" class="logo">
             <div class="dropdown">
                 <a href="" class="test">
-                    INDOOR 
-                    <img src="{{ asset('icons/navSpan.svg') }}"class="nav-span2">
+                    indoor 
+                    <img src="{{ asset('icons/dropdown-button.svg') }}"class="nav-span2">
                 </a>
                 <div class="dropdown-content">
-                    <a href="#">CEILING LAMPS</a>
-                    <a href="#">TABLE LAMPS</a>
-                    <a href="#">FLOOR LAMPS</a>
-                    <a href="#">WALL LIGHTS</a>
-                    <a href="#">BATHROOM LIGHTING</a>
-                    <a href="#">CHANDELIERS</a>
-                    <a href="#">CMART HOME LIGHTING</a>
-                    <a href="#">PROFESSIONAL LIGHTING</a>
-                    <a href="#">OTHER LIGHTING</a>
+                    <a href="#">ceiling lamps</a>
+                    <a href="#">table lamps</a>
+                    <a href="#">floor lamps</a>
+                    <a href="#">wall lights</a>
+                    <a href="#">bathroom lighting</a>
+                    <a href="#">chandeliers</a>
+                    <a href="#">smart home lighting</a>
+                    <a href="#">proffesional lighting</a>
+                    <a href="#">other lighting</a>
 
                 </div>
             </div>
             <div class="dropdown dropdown-middle">
                 <a href="" class="test">
-                    OUTDOOR 
-                    <img src="{{ asset('icons/navSpan.svg') }}"class="nav-span2">
+                    outdoor 
+                    <img src="{{ asset('icons/dropdown-button.svg') }}"class="nav-span2">
                 </a>
                 <div class="dropdown-content">
-                    <a href="#">CEILING LAMPS</a>
-                    <a href="#">RECESSED SOTLIGHTS OUTDOORS</a>
-                    <a href="#">WALL LAMPS</a>
-                    <a href="#">BOLLARD LIGHTING</a>
-                    <a href="#">INGROUND LIGHTS</a>
-                    <a href="#">FLOODLIGHT LED</a>
+                    <a href="#">ceiling lamps</a>
+                    <a href="#">recessed sotlights outdoors</a>
+                    <a href="#">wall lamps</a>
+                    <a href="#">bollard lamps</a>
+                    <a href="#">inground lamps</a>
+                    <a href="#">floodlight LED</a>
                 </div>
             </div>
-            <a href="">LOOKBOOK</a>
+            <a href="">lookbook</a>
             
         </div>
-        <a href="{{ url('') }}"><img src="{{ asset('images/logo.svg') }}" alt="logo" class="logo"></a>
+        <img src="{{ asset('images/logo.svg') }}" alt="logo" class="logo">
         <div class="nav-panel-right">
             <ul>
                 <li><a href="#"><img src="{{ asset('icons/search.svg') }}" alt="search"></a></li>
@@ -52,13 +51,15 @@
 
     </nav>
     <hr>
-</div>
+</header>
 <div class="mobile-nav hide-menu hide-menu-visually">
     <div class="mobile-menu">
         <ul>
-            <li><a href="#">INDOOR<img src="{{ asset('icons/arrow.svg') }}" alt="navSpan" class="nav-span"></a></li>
-            <li><a href="#">OUTDOOR<img src="{{ asset('icons/arrow.svg') }}" alt="navSpan" class="nav-span"></a></li>
-            <li><a href="#">LOOKBOOK</a></li>
+            <li><a href="#">indoor<img src="{{ asset('icons/arrow-right.svg') }}" alt="navSpan" class="nav-span"></a></li>
+            <li><a href="#">outdoor<img src="{{ asset('icons/arrow-right.svg') }}" alt="navSpan" class="nav-span"></a></li>
+            <li><a href="#">lookbook</a></li>
         </ul>
     </div>
 </div>
+
+<script src="{{ asset('js/navigation.js')}}"></script>
