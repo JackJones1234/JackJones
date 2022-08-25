@@ -1,3 +1,21 @@
+body {
+    margin: 0;
+    background-color: white;
+    font-family: Assistant-Regular;
+}
+
+.main-container {
+    max-width: 90%;
+    margin: auto;
+    color: $color;
+}
+
+// @import "../../common/product";
+
+// @import '../../common/header';
+
+// @import '../../common/footer';
+
 .product-container {
     display: grid;
     gap: 30px;

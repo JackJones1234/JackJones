@@ -11,12 +11,7 @@
                     <div>{{ $product['product']->price }}</div>
                 </div>
             @endforeach
-        @else
-        <div>
-            <div>{{ $products->name }}</div>
-            <div>{{ $products['quantity'] }}</div>
-            <div>{{ $products->price }}</div>
-        </div>
         @endif
     </div>
 @endsection
+
