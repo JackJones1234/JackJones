@@ -5,7 +5,7 @@
         <div class="nav-links-left">
             <input class="side-menu" type="checkbox" id="side-menu"/>
             <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-            <img src="{{ asset('images/logo.svg') }}" alt="logo" class="logo">
+            <a href="{{ url('') }}"><img src="{{ asset('images/logo.svg') }}" alt="logo" class="logo"></a>
             <div class="dropdown">
                 <a href="" class="test">
                     indoor 
@@ -41,7 +41,7 @@
             <a href="">lookbook</a>
             
         </div>
-        <img src="{{ asset('images/logo.svg') }}" alt="logo" class="logo">
+        <a href="{{ url('') }}"><img src="{{ asset('images/logo.svg') }}" alt="logo" class="logo"></a>
         <div class="nav-panel-right">
             <ul>
                 <li><a href="#"><img src="{{ asset('icons/search.svg') }}" alt="search"></a></li>
