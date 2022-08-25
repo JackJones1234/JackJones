@@ -43,4 +43,8 @@ class CartController extends Controller
      
         return view('pages.cart', ['products' => $products]);
     }
+
+    public function edit() {
+        
+    }
 }

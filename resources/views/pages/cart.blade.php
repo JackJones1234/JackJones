@@ -8,13 +8,13 @@
                 <div>Name: {{ $product['product']->name }}</div>
                 <div>Quantity: {{ $product['quantity'] }}</div>
                 <div>Price for 1: {{ $product['product']->price }}</div>
+                <a href="">Remove from cart</a>
+                <form action="" method="POST">
+                    @csrf
+                    <input type="number" min="1" max="100" value={{ $product['quantity']}}>
+                    <input type="submit" value="add other quantity">
+                </form>
             </div>
         @endforeach
-    @else
-       <div>
-           <div>Namee: {{ $products->name }}</div>
-           <div>Quantityy: {{ $products['quantity'] }}</div>
-           <div>Price for 1ss: {{ $products->price }}</div>
-       </div>
     @endif
 @endsection
