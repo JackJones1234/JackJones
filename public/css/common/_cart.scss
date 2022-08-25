@@ -19,10 +19,11 @@
         text-align: center;
     }
     & .cart-product-container{
-        border: 1px solid #7D7D7D;
+        display: flex;
+        justify-content: space-between;
         background-color: inherit;
         font-size: 0.8125rem;
-        padding: 0.78125rem 2.5rem 0.78125rem 0.6875em;
+        padding: 0.78125rem 0;
         color: $color;
     }
     & .cart-head{
@@ -35,6 +36,20 @@
             font-weight: 400;
             font-size: 40px;
             line-height: 52px;
+        }
+    }
+    & .cart-subhead{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #E1E3E5;
+        & div{
+            padding: 0 0 20px 0;
+            font-family: Assistant-Regular;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            text-transform: uppercase;
         }
     }
 }

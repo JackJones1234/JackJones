@@ -7,6 +7,10 @@
                 <h1 class="cart-h1">Your cart</h1>
                 <a class="cart-storefront-btn" href="{{ url('') }}">Continue shopping</a>
             </div>      
+            <div class="cart-subhead">
+                <div class="cart-subhed-text">product</div>
+                <div class="cart-subhed-text">total</div>
+            </div>     
             @if(gettype($products) == "array")
                 @foreach($products as $product)
                     <div class="cart-product-container">
