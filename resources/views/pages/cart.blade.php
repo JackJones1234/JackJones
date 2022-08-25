@@ -8,14 +8,14 @@
         </div>
         <div class="cart-subhead">
             <div class="cart-subhed-text">product</div>
-            <div class="cart-subhed-text">total</div>
+            <div class="cart-subhed-text total">total</div>
         </div>
         @if(gettype($products) == "array")
             @foreach($products as $product)
                 <div class="cart-product-container">
                     <div>Name: {{ $product['product']->name }}</div>
-                    <div>Quantity: {{ $product['quantity'] }}</div>
-                    <div>Price for 1: {{ $product['product']->price }}</div>
+                    <div class="quantity">Quantity: {{ $product['quantity'] }}</div>
+                    <div class="price">Price for 1: {{ $product['product']->price }}</div>
                     <form action="">
                         @csrf
                         <input type="number" name="quantity" min="1" max="100" value={{ $product['quantity']}}>
