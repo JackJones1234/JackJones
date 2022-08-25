@@ -1,7 +1,7 @@
 @extends('layout.master')
 
 @section('content')
-    <div class="cart-container">`
+    <div class="cart-container">
         <div class="cart-head">
             <h1 class="cart-h1">Your cart</h1>
             <a class="cart-storefront-btn" href="{{ url('') }}">Continue shopping</a>

@@ -1,5 +1,6 @@
 const updateBtn = document.querySelectorAll('.update');
 const deleteBtns = document.querySelectorAll('.delete'); // e.target input name=""
+changeTotal();
 
 console.log(updateBtn);
 
@@ -7,13 +8,15 @@ updateBtn.forEach(element => {
     element.addEventListener('click', (e) => {
         let self = e.target;
         e.preventDefault();
+
         fetch('/cart/edit', {
             method: 'POST',
             body: new FormData(self.parentElement)
         })
         .then((response) => response.json())
         .then((data) => {
-           self.parentElement.parentElement.childNodes[3].innerText =  'Quantity:' + data['result'];
+           self.parentElement.parentElement.childNodes[3].innerText =  'Quantity: ' + data['result'];
+            changeTotal();
         })
         .catch()
     });
@@ -27,14 +30,12 @@ deleteBtns.forEach(element => {
         .then((data) => {
            if(data['result'] == 'deleted') {
             e.target.parentElement.parentElement.remove();
+               changeTotal();
            }
         })
         .catch()
     })
 });
-
-const totalField = document.querySelector('.total');
-totalField.innerHTML = 'total: ' + getTotal();
 
 function getTotal() {
     const prices = document.querySelectorAll('.price');
@@ -43,9 +44,10 @@ function getTotal() {
     for(let i = 0; i < prices.length; i++) {
         const price = getPrice(prices[i]);
         const quantity = getQuantity(quantities[i]);
-        total += price * quantity;
+        let number = (price * quantity).toFixed(2);
+        total += parseFloat(number);
     }
-    return total;
+    return total.toFixed(2);
 }
 
 function getPrice(price) {
@@ -54,4 +56,9 @@ function getPrice(price) {
 
 function getQuantity(quantity) {
     return parseFloat(quantity.innerHTML.substring(10));
+}
+
+function changeTotal() {
+    console.log('I am here');
+    document.querySelector('.total').innerText = 'total: ' + getTotal();
 }
