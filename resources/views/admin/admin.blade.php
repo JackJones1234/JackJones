@@ -3,7 +3,7 @@
 @section('content')
 <div class="login-wrapper">
     <div class="image-wrapper">
-    <img src="{{ asset('images/product/tablelamps/Lamp1.jpeg') }}">
+        <img src="{{ asset('images/product/tablelamps/Lamp1.jpeg') }}">
     </div>
     
     <div class="login-form">
