@@ -221,7 +221,7 @@ hr {
     opacity: 0;
 }
 
-@include for-phone-only {
+@include for-mobile-up {
     .nav-wrapper {
         nav {
             .nav-links-left {
