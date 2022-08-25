@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    @include('common.head')
+<head>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+</head>
 <body>
-    @yield('content')
+    <div class="main-container">
+        @include('common.header')
+        @yield('content')
+        @include('common.footer')
+    </div>
 </body>
 </html>

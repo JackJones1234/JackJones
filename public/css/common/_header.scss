@@ -6,6 +6,7 @@ hr {
     z-index: 10;
     top: 0px;
     background-color: white;
+    z-index: 1;
 
     nav {
         display: flex;
@@ -72,6 +73,43 @@ hr {
                 display: none;
             }
 
+            a{
+                text-decoration: none;
+                color: black;
+            }
+    
+            .dropdown-content{
+                display: none;
+                z-index: 2;
+                position: absolute;
+                top: 41px;
+                background-color: white;
+                border: 1px solid grey;
+                padding: 10px;
+            }
+            .dropdown:hover .dropdown-content{
+                display: grid;
+            }
+            .dropdown{
+                display: none;
+                justify-content: space-between;
+
+                
+                a{
+                    color: black;
+                    text-decoration: none;
+                    padding:10px 10px;
+    
+                    .nav-span2{
+                        margin-left: 15px;
+                        height: 10px;
+                    }
+                }
+                a:hover{
+                    background-color: rgb(221, 221, 221);
+                    transition: all 0.5s linear;
+                }
+            }
             ul {
                 display: none;
 
@@ -92,21 +130,31 @@ hr {
                     margin: 0 16px;
                 }
             }
+
+            a{
+                display: none;
+                align-items: center;
+                margin-left: 10px;
+            }
         }
+
         .logo {
+            margin-right: 10px;
             img {
                 width: 90px;
                 height: 22px;
             }
         }
+        
         .nav-panel-right {
+
             display: flex;
             align-items: center;
 
             ul {
                 display: flex;
-                // margin:0 64px 0 0;
                 padding: 0;
+                margin: 0;
 
                 li {
                     display: flex;
@@ -125,7 +173,6 @@ hr {
         }
     }
 }
-
 .mobile-nav {
     height: 100%;
     width: 100%;
@@ -174,7 +221,7 @@ hr {
     opacity: 0;
 }
 
-@include for-phone-only {
+@include for-mobile-up {
     .nav-wrapper {
         nav {
             .nav-links-left {
@@ -187,23 +234,18 @@ hr {
                 label {
                     display: none;
                 }
+                a{
+                    display: flex;
+                }
+                .dropdown{
+                    display: flex;
+                }
+            }
             }
             .logo {
                 display: none;
             }
-        }
+            
     }
+
 }
-
-// .main-page-title{
-//     text-align: center;
-//     overflow: auto;
-//     margin: 64px 0;
-
-//     h1{
-//         margin-bottom: 37px;
-//     }
-// }
-// .main-page-title{
-//     text-align: center;
-// }

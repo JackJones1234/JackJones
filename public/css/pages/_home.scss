@@ -7,14 +7,8 @@ body {
 .main-container {
     max-width: 90%;
     margin: auto;
-    color: $color;
+    color: $color-black;
 }
-
-// @import "../../common/product";
-
-// @import '../../common/header';
-
-// @import '../../common/footer';
 
 .product-container {
     display: grid;
