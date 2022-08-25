@@ -5,7 +5,7 @@
     <div class="product-wrapper">
         <div class="single-product-container">
             <div class="product-card">
-                <img src="{{ asset('images/product/product.png') }}" alt="product">
+                <img src="{{ asset('images/product/tablelamps/'. $product->img) }}" alt="product">
             </div>
         </div>
         <div class="product-info">

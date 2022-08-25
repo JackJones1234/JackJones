@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layout.admin_master')
 
 @section('content')
 <form action="/admin/product/store" method="POST" enctype="multipart/form-data">
