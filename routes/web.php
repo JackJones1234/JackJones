@@ -44,4 +44,6 @@ Route::post('/admin/product/edit', [ProductController::class, 'storeEdit']);
 Route::post('/cart/edit', [CartController::class, 'edit']);
 Route::get('/cart', [CartController::class, 'index']);
 Route::post('/cart/add', [CartController::class, 'addToCart']);
+
 Route::get('/cart/delete/{id}', [CartController::class, 'delete']);
+Route::post('cart/delete/{id}', [CartController::class], 'delete');
