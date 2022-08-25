@@ -1,7 +1,7 @@
 hr {
     margin: 0;
 }
-.nav-wrapper {
+header {
     position: sticky;
     z-index: 10;
     top: 0px;
@@ -81,7 +81,6 @@ hr {
                 text-decoration: none;
                 color: black;
                 text-transform: capitalize;
-                // text-transform: capitalize;
             }
 
             .dropdown-content {
@@ -99,6 +98,11 @@ hr {
             .dropdown {
                 display: none;
                 justify-content: space-between;
+
+                img {
+                    width: 9px;
+                    height: 5px;
+                }
 
                 a {
                     color: black;
@@ -208,6 +212,7 @@ hr {
                     font-size: 18px;
                     line-height: 15px;
                     margin: 12px 0;
+                    text-transform: capitalize;
 
                     img {
                         float: right;
@@ -226,7 +231,7 @@ hr {
 }
 
 @include for-mobile-up {
-    .nav-wrapper {
+    header {
         nav {
             .nav-links-left {
                 ul {

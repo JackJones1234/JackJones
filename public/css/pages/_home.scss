@@ -4,8 +4,7 @@ body {
 }
 
 .main-container {
-    max-width: 90%;
-    margin: auto;
+    padding: 0 5%;
     color: $color-black;
 }
 
@@ -13,6 +12,7 @@ body {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding-bottom: 60px;
 }
 
 .product-card {
@@ -29,19 +29,18 @@ body {
     }
     .product-info {
         padding: 12px;
-        font-size: 24px;
         display: flex;
         flex-direction: column;
         gap: 12px;
         transition: 0.3s;
 
         // TODO: manage typography responsively
-        .product-name {
-            font-size: 20px;
+        & div:first-child {
+            font-size: 14px;
         }
 
-        .product-price {
-            font-size: 18px;
+        & div:last-child {
+            font-size: 16px;
         }
     }
 }

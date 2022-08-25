@@ -1,5 +1,4 @@
 <footer>
-
     {{-- selects --}}
     <div class="footer-selects">
         {{-- currency --}}
@@ -85,5 +84,3 @@
     {{-- trademark --}}
     <div class="trademark">© 2021, dawn-theme-default Powered by Shopify</div>
 </footer>
-
-

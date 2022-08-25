@@ -1,11 +1,11 @@
 {{-- TODO: implement dropdowns for links --}}
 {{-- TODO: recreate for dynamic links --}}
-<div class="nav-wrapper">
+<header>
     <nav>
         <div class="nav-links-left">
             <input class="side-menu" type="checkbox" id="side-menu"/>
             <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-            <a href="{{ url('') }}"><img src="{{ asset('images/logo.svg') }}" alt="logo" class="logo"></a>
+            <img src="{{ asset('images/logo.svg') }}" alt="logo" class="logo">
             <div class="dropdown">
                 <a href="" class="test">
                     indoor 
@@ -41,7 +41,7 @@
             <a href="">lookbook</a>
             
         </div>
-        <a href="{{ url('') }}"><img src="{{ asset('images/logo.svg') }}" alt="logo" class="logo"></a>
+        <img src="{{ asset('images/logo.svg') }}" alt="logo" class="logo">
         <div class="nav-panel-right">
             <ul>
                 <li><a href="#"><img src="{{ asset('icons/search.svg') }}" alt="search"></a></li>
@@ -51,7 +51,7 @@
 
     </nav>
     <hr>
-</div>
+</header>
 <div class="mobile-nav hide-menu hide-menu-visually">
     <div class="mobile-menu">
         <ul>
@@ -61,3 +61,5 @@
         </ul>
     </div>
 </div>
+
+<script src="{{ asset('js/navigation.js')}}"></script>
