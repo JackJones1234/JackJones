@@ -1,21 +1,35 @@
 @extends('layout.master')
 
+
 @section('content')
-    <div class="single-product-container">
-        <div class="product-card">
-            <img src="{{ asset('images/product/' . $product->img) }}" alt="">
-            <div class="product-info">
-                <div>{{ $product->name }}</div>
-                <div>${{ $product->price }}</div>
+<div class="main-container">
+    @include('common.header')
+    <div class="product-wrapper">
+        <div class="single-product-container">
+            <div class="product-card">
+                <img src="{{ asset('images/product/product.png') }}" alt="product">
             </div>
         </div>
-        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, dignissimos ea eos esse fugit illo laboriosam magni mollitia non odio odit optio quam, sed ullam vel veniam voluptate. Modi, tempore?</div>
-        <form action="/cart" method="POST">
-            @csrf
-            <input type="number" name="product_quantity" min="1" max="100" value="1">
-            <input type="submit" value="ADD TO CART">
-            <input type="hidden" name="product_id" value="{{ $product->id }}">
-        </form>
-        <a href="{{ url('') }}">go back</a>
+        <div class="product-info">
+            <div class="product-name">{{ $product->name }}</div>
+            <div class="product-price">${{ $product->price }}</div>
+            <form action="/cart" method="POST">
+                @csrf
+                <div class="quantity">
+                    <input id="quantity-remove" type="button" onclick='removeQuantity(this.value);' value="-">
+                    <input id="quantity" type="text" name="product_quantity" value="1" readonly>
+                    <input id="quantity-add" type="button" onclick='addQuantity(this.value);' value="+">
+                </div>
+                <br>
+                <input id="button-submit" type="submit" value="Add to cart">
+                <input id="button-buyitnow" type="submit" value="But it now">
+                <input type="hidden" name="product_id" value="{{ $product->id }}">
+            </form>
+        </div>
     </div>
+    @include('common.footer')
+</div>
+<script src="{{ asset('js/productQuantity.js')}}"></script>
+<script src="{{ asset('js/navigation.js')}}"></script>
 @endsection
+
