@@ -11,7 +11,7 @@
         <div class="product-info">
             <div class="product-name">{{ $product->name }}</div>
             <div class="product-price">${{ $product->price }}</div>
-            <form action="/cart" method="POST">
+            <form action="/cart/add" method="POST">
                 @csrf
                 <div class="quantity">
                     <input id="quantity-remove" type="button" onclick='removeQuantity(this.value);' value="-">
@@ -25,7 +25,6 @@
             </form>
         </div>
     </div>
-
-    <script src="{{ asset('js/productQuantity.js')}}"></script>
+    <script src="{{ asset('js/product/productQuantity.js')}}"></script>
 @endsection
 

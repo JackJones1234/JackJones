@@ -1,12 +1,11 @@
 const updateBtn = document.querySelectorAll('.update');
-// const forms = document.querySelectorAll('form');
 const deleteBtns = document.querySelectorAll('.delete'); // e.target input name=""
 
 console.log(updateBtn);
+
 updateBtn.forEach(element => {
     element.addEventListener('click', (e) => {
         let self = e.target;
-        // console.log(self.parentElement);
         e.preventDefault();
         fetch('/cart/edit', {
             method: 'POST',
@@ -23,11 +22,7 @@ updateBtn.forEach(element => {
 deleteBtns.forEach(element => {
     element.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log(e.target.parentElement)
-        fetch('/cart/delete/' + e.target.parentElement.childNodes[9].value, {
-            method: 'POST',
-            
-        })
+        fetch('/cart/delete/' + e.target.parentElement.childNodes[9].value)
         .then((response) => response.json())
         .then((data) => {
            if(data['result'] == 'deleted') {
