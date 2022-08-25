@@ -2,31 +2,34 @@
 <!-- <footer>footer</footer> -->
 <!-- <script src="{{ asset('js/navigation.js') }}"></script> -->
 <footer class="footer-container">
-    <div class="site-footer">
         <div class="footer-inputs footer-grid-item">
             <label class="footer-label" for="country">Country/region
-                <input list="countries" id="country" name="country">
-                <datalist id="countries">
-                    <option value="Latvia">
-                    <option value="Estonia">
-                    <option value="Lithuania">
-                </datalist>
+                <div class="footer-select-container">
+                    <select class="footer-select">
+                        <option value="">Europe (EUR €)</option>
+                        <option value="">Canada (CAD $)</option>
+                        <option value="">Japan (JPY ¥)</option>
+                    </select>
+                    <span class="footer-select-arrow">
+                        <img src="{{ asset('images/footer/svg/chevrond.svg') }}">
+                    </span>
+                </div>
             </label>
-            <label class="footer-label" for="language">
-                Language
-                <input list="languages" id="language" name="language">
-                <datalist id="languages">
-                    <option value="Latvian">
-                    <option value="Estonian">
-                    <option value="Lithuanian">
-                    <option value="English">
-                </datalist>
+            <label class="footer-label" for="language">Language
+                <div class="footer-select-container">
+                    <select class="footer-select">
+                        <option value="">Latvian</option>
+                        <option value="">English</option>
+                        <option value="">Janapese</option>
+                    </select>
+                    <span class="footer-select-arrow">
+                        <img src="{{ asset('images/footer/svg/chevrond.svg') }}">
+                    </span>
+                </div>
             </label>
         </div>
         <div class="footer-icons footer-grid-item">
-
             <a href="#" class="footer-links">
-                <img src="{{ asset('images/footer/svg/visa.svg') }}">
                 <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.07" d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="black" />
                     <path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="#5A31F4" />
@@ -82,7 +85,6 @@
         <span class="footer-span footer-grid-item">
             © 2021, dawn-theme-default Powered by Shopify
         </span>
-    </div>
 </footer>
 
 

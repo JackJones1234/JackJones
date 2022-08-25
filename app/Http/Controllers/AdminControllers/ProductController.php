@@ -45,8 +45,8 @@ class ProductController extends Controller
         } catch(Exception $e) {
             echo $e->getMesssage();
         }
-        
-        
+
+
         $model->save();
 
         return redirect('/');
@@ -74,9 +74,10 @@ class ProductController extends Controller
         $productData = Product::find($request->input('product_id'));
         $productData->name = $request->input('product_name');
         $productData->price = $request->input('product_price');
-        // $productData->img = $request->input('pr')  
+        // $productData->img = $request->input('pr')
         $productData->save();
 
         return redirect('/admin/product')->with('message', 'Product updated successfully!');
     }
+
 }
