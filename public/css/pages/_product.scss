@@ -75,21 +75,23 @@
    }
 }
 @include for-tablet-portrait-up{
-   .product-wrapper{
-      display: flex;
-      justify-content: space-between;
-
-
-      .single-product-container{
-         margin-top: 20px;
-         min-width: 70%;
-         .product-card{
-            min-width: 60%;
+   .main-container{
+      .product-wrapper{
+         display: flex;
+         justify-content: space-between;
+   
+   
+         .single-product-container{
+            margin-top: 20px;
+            min-width: 70%;
+            .product-card{
+               min-width: 70%;
+            }
          }
-      }
-
-      .product-info{
-         min-width: 30%;
+   
+         .product-info{
+            min-width: 30%;
+         }
       }
    }
 }
