@@ -21,13 +21,16 @@
                             @csrf
                             <input type="number" name="quantity" min="1" max="100" value={{ $product['quantity']}}>
                             <input type="hidden" name="old_quantity" value="{{ $product['quantity'] }}">
-                            <input type="submit" value="add other quantity" class="update">
+                            <input type="submit" value="Change" class="update">
                             <input type="hidden" value="{{ $product['product']->id}}" name="product_id">
+                            <input type="submit" value="Remove" class="delete">
                         </form>
                     </div>
                 @endforeach
             @endif
         </div>
     </div>
+
+    <script src="{{ asset('js/cart/cart.js') }}"></script>
 @endsection
 

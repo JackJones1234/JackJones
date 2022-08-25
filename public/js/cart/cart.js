@@ -1,6 +1,6 @@
 const updateBtn = document.querySelectorAll('.update');
 // const forms = document.querySelectorAll('form');
-const atags = document.querySelectorAll('.delete'); // e.target input name=""
+const deleteBtns = document.querySelectorAll('.delete'); // e.target input name=""
 
 console.log(updateBtn);
 updateBtn.forEach(element => {
@@ -20,14 +20,18 @@ updateBtn.forEach(element => {
     });
 });
 
-atags.forEach(element => {
+deleteBtns.forEach(element => {
     element.addEventListener('click', (e) => {
         e.preventDefault();
-        fetch(e.target.href)
+        console.log(e.target.parentElement)
+        fetch('/cart/delete/' + e.target.parentElement.childNodes[9].value, {
+            method: 'POST',
+            
+        })
         .then((response) => response.json())
         .then((data) => {
            if(data['result'] == 'deleted') {
-            e.target.parentElement.remove();
+            e.target.parentElement.parentElement.remove();
            }
         })
         .catch()
