@@ -3,7 +3,10 @@
 @section('content')
     <div class="main-container">
         <div class="cart-container">
-            <a class="cart-storefront-btn" href="{{ url('') }}">Continue shopping</a>
+            <div class="cart-head">
+                <h1 class="cart-h1">Your cart</h1>
+                <a class="cart-storefront-btn" href="{{ url('') }}">Continue shopping</a>
+            </div>      
             @if(gettype($products) == "array")
                 @foreach($products as $product)
                     <div class="cart-product-container">
