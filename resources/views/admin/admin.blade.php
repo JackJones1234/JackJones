@@ -1,9 +1,12 @@
 @extends('layout.admin_master')
 
 @section('content')
-<div
-    class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-    <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+<div class="login-wrapper">
+    <div class="image-wrapper">
+        <img src="{{ asset('images/product/tablelamps/Lamp1.jpeg') }}">
+    </div>
+    
+    <div class="login-form">
         <form action="{{url('/admin/login')}}" method="post">
             @csrf
             <input name="email" placeholder="email">
@@ -11,7 +14,8 @@
             <button type="submit">Login</button>
         </form>
     </div>
-    <a href="{{url('')}}" aria-label="go to storefront">Go to storefront</a>
+
+    <a class="go-home" href="{{url('')}}" aria-label="go to storefront">Go to storefront <img src="{{ asset('icons/arrow-right.svg') }}"></a>
 </div>
     @if(session()->has('message'))
     <div>{{ session()->get('message') }}</div>

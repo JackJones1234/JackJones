@@ -1,0 +1,46 @@
+body{
+
+    .login-wrapper{
+        max-width: 90%;
+        margin: auto;
+
+        .image-wrapper{
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+            img{
+                width: 20%;
+                border-radius: 500px;
+            }
+        }
+        .login-form{
+            display: flex;
+            justify-content: center;
+
+            form{
+                min-width: 50%;
+
+                input, button{
+                    display: block;
+                    border: 1px solid rgb(211, 211, 211);
+                    width: 100%;
+                    background: none;
+                    padding: 10px 30px;
+                    margin: 10px 0 ;
+                    cursor: pointer;
+                }
+                input::placeholder{
+                    text-align: center;
+                }
+            }
+        }
+        .go-home{
+            display: block;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            margin-top: 100px;
+            font-size: 25px;
+        }
+    }
+}
