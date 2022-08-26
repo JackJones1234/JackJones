@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 // Common globals
 @import "common/vars";
 @import "common/mixins";
@@ -15,11 +14,10 @@
 @import "common/title";
 @import "common/cart";
 
-@import "common/checkout";
-
 // Pages
 @import "pages/admin/login";
 @import "pages/admin/index";
 
 @import "pages/home";
 @import "pages/product";
+@import "pages/checkout";
