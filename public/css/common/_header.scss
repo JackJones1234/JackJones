@@ -185,6 +185,7 @@ header {
                 li:last-child {
                     margin-left: 30px;
                 }
+                
             }
         }
     }
@@ -263,4 +264,42 @@ header {
             display: none;
         }
     }
+}
+form{
+    
+    .search-bar{
+        border-radius: 0px;
+        border: 1px solid black;
+        padding: 2px 5px;
+        cursor: pointer;
+    }
+    .search-bar::placeholder{
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .search-submit, .search-cancel{
+        background: none;
+        padding: 1px 5px;
+        font-family: Assistant-Regular;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: capitalize;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+    .search-cancel{
+        background-color: black;
+        color: white;
+    }
+}
+.mobile-search{
+    justify-content: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(138, 138, 138);
+}
+.mobile-search-active{
+    display: flex;
+}
+.mobile-search-deactive{
+    display: none;
 }

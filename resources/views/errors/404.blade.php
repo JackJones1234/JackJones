@@ -26,10 +26,46 @@
     }
 
     @keyframes bounce {
-   0%, 20%, 50%, 80%, 100% {transform: translateY(0) rotateX(0deg);} 
-   40% {transform: translateY(-200px) rotateX(130deg);} 
-   60% {transform: translateY(-100px) rotateX(270deg);} 
-} 
+        0%, 20%, 50%, 80%, 100% {transform: translateY(0) rotateX(0deg);} 
+        40% {transform: translateY(-200px) rotateX(130deg);} 
+        60% {transform: translateY(-100px) rotateX(270deg);} 
+    }
+
+    @-webkit-keyframes colorchange {
+        0% {
+            color: blue;
+        }
+        10% {
+            color: #8e44ad;
+        }
+        20% {
+            color: #1abc9c;
+        }
+        30% {
+            color: #d35400;
+        }
+        40% {
+            color: blue;
+        }
+        50% {
+            color: #34495e;
+        }
+        60% {
+            color: blue;
+        }
+        70% {
+            color: #2980b9;
+        }
+        80% {
+            color: #f1c40f;
+        }
+        90% {
+            color: #2980b9;
+        }
+        100% {
+            color: pink;
+        }
+    }
 
     body {
         background: url('../../../images/swamp.png') no-repeat center;
@@ -42,6 +78,7 @@
         background-color: white;
         font-size: 60px;
         text-align: center;
+        animation: 2s infinite colorchange;
     }
     .shrek{
         animation: 6s infinite rotate;
@@ -58,6 +95,7 @@
         font-size: 40px;
         cursor: pointer;
         animation: 2s infinite bounce;
+        animation: 2s infinite colorchange;
         user-select: none;
     }
 
