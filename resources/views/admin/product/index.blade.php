@@ -23,10 +23,10 @@
                         <div class="form-wrapper">
                             <form action="/admin/product/delete" method="POST">
                                 @csrf
-                                <input type="submit" value="Delete">
+                                <input class="button-dark" type="submit" value="Delete">
                                 <input type="hidden" name='product_id' value={{ $product->id }}>
                             </form>
-                            <button onclick="location.href='/admin/product/edit/{{ $product->id }}'">Edit</button>
+                            <button class="button-light" onclick="location.href='/admin/product/edit/{{ $product->id }}'">Edit</button>
                         </div>
                     </td>
                 </tr>

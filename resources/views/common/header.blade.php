@@ -21,7 +21,6 @@
                     <a href="#">smart home lighting</a>
                     <a href="#">proffesional lighting</a>
                     <a href="#">other lighting</a>
-
                 </div>
             </div>
             <div class="dropdown dropdown-middle">

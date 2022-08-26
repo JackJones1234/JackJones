@@ -14,11 +14,25 @@
         border-spacing: 10px;
         min-width: 100%;
     }
+    table tr {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
 
     .form-wrapper {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
+        align-items: center;
         justify-content: space-between;
+        gap: 20px;
+    }
+    
+    tbody{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
 }
 
@@ -27,7 +41,7 @@
     background: none;
     cursor: pointer;
     padding: 10px;
-    max-width: 25%;
+    max-width: 200px;
     border: 2px solid black;
 }
 
@@ -36,7 +50,6 @@
     color: white;
     cursor: pointer;
     padding: 10px;
-    max-width: 25%;
-    margin-top: 10px;
+    max-width: 200px;
     border: 2px solid black;
 }
