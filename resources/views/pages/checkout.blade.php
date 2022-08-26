@@ -11,26 +11,26 @@
             </div>
             <input type="text" placeholder="Enter your address">
             <div class="contact-info">
-                <input type="text" placeholder="email">
-                <input type="text" placeholder="telephone number">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Telephone number">
             </div>
         </form>
     </div>
     <div class="cart-wrapper">
-        <h1>shopping cart</h1>
         @include('common.cart')
     </div>
     <div class="payment-wrapper">
         <h1>payment</h1>
+        <div class="payment-content">
             <div class="payment-method-wrapper">
-                <input type="radio" name="credit" id="">
-                <label for="credit">credit card</label>
-
-                <input type="radio" name="apple" id="">
-                <label for="apple">apple pay</label>
-
-                <input type="radio" name="google" id="">
-                <label for="google">google pay</label>
+                <input type="radio" name="payment" id="credit" value="credit">
+                <label for="credit">Credit card</label>
+                <br>
+                <input type="radio" name="payment" id="apple" value="applepay">
+                <label for="apple">Apple pay</label>
+                <br>
+                <input type="radio" name="payment" id="google" value="googlepay">
+                <label for="google">Google pay</label>
             </div>
             <div class="payment-details-wrapper">
                 <input type="text" placeholder="Name on card">
@@ -58,9 +58,11 @@
                     <option value='24'>2025</option>
                     <option value='22'>2026</option>
                 </select>
-                <input class="card-expire-date" type="text"/>
+                <label for="card-expire-date">CVC</label>
+                <input class="card-expire-date" type="text" name="card-expire-date"/>
+                
             </div>
-
+        </div>
     </div>
 
 @endsection
