@@ -47,9 +47,9 @@
                 <li><a href="#" id="search"><img src="{{ asset('icons/search.svg') }}" alt="search"></a></li>
                 <form action="/search" method="POST" class="search-form-deactive" id="search-form">
                     @csrf
-                    <input type="text" placeholder="search" name="search">
-                    <input type="submit" value="submit">
-                    <input type="button" value="cancel" id="cancel">
+                    <input class="search-bar" type="text" placeholder="search" name="search">
+                    <input class="search-submit" type="submit" value="submit">
+                    <input class="search-cancel" type="button" value="cancel" id="cancel">
                 </form>
                 <li><a href="/cart"><img src="{{ asset('icons/cart_empty.svg') }}" alt="shopping cart"></a></li>
             </ul>
@@ -58,6 +58,14 @@
     </nav>
     <hr>
 </header>
+<div class="mobile-search mobile-search-deactive">
+    <form action="/search" method="POST" class="search-form-deactive" id="search-form">
+        @csrf
+        <input class="search-bar" type="text" placeholder="search" name="search">
+        <input class="search-submit" type="submit" value="submit">
+        <input class="search-cancel" type="button" value="cancel" id="cancelMobile">
+    </form>
+</div>
 <div class="mobile-nav hide-menu hide-menu-visually">
     <div class="mobile-menu">
         <ul>

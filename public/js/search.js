@@ -1,16 +1,30 @@
 const searchLogo = document.querySelector('#search');
 const searchForm = document.querySelector('#search-form');
+const searchMobile = document.querySelector('.mobile-search')
 const cancelBtn = document.querySelector('#cancel');
+const cancelBtnMobile = document.querySelector('#cancelMobile');
 
 searchLogo.addEventListener('click', function() {
-    searchForm.classList.remove("search-form-deactive");
-    searchForm.classList.add('search-form-active');
-    searchLogo.style.display = "none";
+    if(window.innerWidth < 600){
+        searchMobile.classList.remove("mobile-search-deactive");
+        searchMobile.classList.add("mobile-search-active");
+        searchLogo.style.display = "none";
+    }else{
+        searchForm.classList.remove("search-form-deactive");
+        searchForm.classList.add('search-form-active');
+        searchLogo.style.display = "none";
+    }
+    
 })
 
 cancelBtn.addEventListener('click', function() {
     searchForm.classList.add("search-form-deactive");
     searchForm.classList.remove('search-form-active');
+    searchLogo.style.display = "block";
+})
+cancelBtnMobile.addEventListener('click', function() {
+    searchMobile.classList.remove("mobile-search-active");
+    searchMobile.classList.add("mobile-search-deactive");
     searchLogo.style.display = "block";
 })
 
