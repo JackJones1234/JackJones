@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="delivery-wrapper">
-        <h1>delivery options</hi>
+        <h1>delivery options</h1>
         <form action="">
             <div class="customer-name">
                 <input type="text" placeholder="First name">
@@ -21,7 +21,7 @@
         @include('common.cart')
     </div>
     <div class="payment-wrapper">
-        <h1>payment</hi>
+        <h1>payment</h1>
             <div class="payment-method-wrapper">
                 <input type="radio" name="credit" id="">
                 <label for="credit">credit card</label>
