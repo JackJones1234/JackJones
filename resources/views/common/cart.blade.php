@@ -1,7 +1,5 @@
 @extends('layout.master')
 
-@section('content')
-
 <div class="cart-container">
     <div class="cart-head">
         <h1 class="cart-h1">Your cart</h1>
@@ -35,6 +33,4 @@
 </div>
 
 <script src="{{ asset('js/cart/cart.js') }}"></script>
-
-@endsection
 
