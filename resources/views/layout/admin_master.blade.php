@@ -2,9 +2,11 @@
 <html lang="en">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 <body>
-    @if(Auth::check())
-    <button onclick="location.href='/admin/logout'">Logout</button>
-    @endif
-    @yield('content')
+    <div class="admin-master-container">
+        @if(Auth::check())
+        <button class="button-dark" onclick="location.href='/admin/logout'">Logout</button>
+        @endif
+        @yield('content')
+    </div>
 </body>
 </html>

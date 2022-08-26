@@ -1,9 +1,18 @@
+.admin-master-container{
+    display: grid;
+    grid-template: repeat(3, 1fr);
+    gap: 10px;
+    padding:  5%;
+}
+
 .table-wrapper {
     display: flex;
     justify-content: center;
-
+    // align-items: center;
+    align-items: stretch;
     table {
         border-spacing: 10px;
+        min-width: 100%;
     }
 
     .form-wrapper {
@@ -11,4 +20,23 @@
         flex-direction: row;
         justify-content: space-between;
     }
+}
+
+
+.button-light {
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+    max-width: 25%;
+    border: 2px solid black;
+}
+
+.button-dark {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    max-width: 25%;
+    margin-top: 10px;
+    border: 2px solid black;
 }
