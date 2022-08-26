@@ -22,10 +22,10 @@ class AdminController extends Controller
 
         $credentials = $request->only('email', 'password');
         if(Auth::attempt($credentials)) {
-            return redirect('admin/product')->with('message', 'Login successful');
+            return redirect('admin/product');
         }
 
-        return redirect('admin')->with('message', 'Login details are not valid');
+        return redirect('admin');
     }
 
     public function logOut()
