@@ -8,14 +8,14 @@ updateBtn.forEach(element => {
     element.addEventListener('click', (e) => {
         let self = e.target;
         e.preventDefault();
-
+        console.log(self.parentElement.parentElement.childNodes[1].childNodes[3])
         fetch('/cart/edit', {
             method: 'POST',
             body: new FormData(self.parentElement)
         })
         .then((response) => response.json())
         .then((data) => {
-           self.parentElement.parentElement.childNodes[3].innerText =  'Quantity: ' + data['result'];
+            self.parentElement.parentElement.childNodes[1].childNodes[3].innerText =  'Quantity: ' + data['result'];
             changeTotal();
         })
         .catch()
@@ -59,6 +59,5 @@ function getQuantity(quantity) {
 }
 
 function changeTotal() {
-    console.log('I am here');
     document.querySelector('.total').innerText = 'total: ' + getTotal();
 }

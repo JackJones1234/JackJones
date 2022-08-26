@@ -1,0 +1,21 @@
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    .search-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            transition: all 1s linear;
+            color:black;
+        }
+    }
+}
+
