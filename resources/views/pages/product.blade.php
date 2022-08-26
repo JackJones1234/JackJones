@@ -18,7 +18,7 @@
                     </div>
     
                     <input id="button-submit" type="submit" value="Add to cart">
-                    <input id="button-buyitnow" type="submit" value="But it now">
+                    <input id="button-buyitnow" type="submit" value="Buy it now">
                     <input type="hidden" name="product_id" value="{{ $product->id }}">
                 </form>
             </div>
