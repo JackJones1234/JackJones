@@ -17,10 +17,20 @@ class ProductsSeeder extends Seeder
     {
         for ($i = 0; $i <= 20; $i++) {
             DB::table('products')->insert([
-                'name' => Str::random(10),
+                'name' => $this->generateRandomString(),
                 'img' => 'Lamp' . rand(1,10) . '.jpeg',
                 'price' => round(rand(1, 10000) / 100, 2)
             ]);
         }
+    }
+
+    function generateRandomString($length = 10) {
+        $characters = 'abcdefghijklmnopqrstuvwxyz';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+        return $randomString;
     }
 }
