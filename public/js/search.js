@@ -19,12 +19,12 @@ searchLogo.addEventListener("click", function () {
 cancelBtn.addEventListener("click", function () {
     searchForm.classList.add("search-form-deactive");
     searchForm.classList.remove("search-form-active");
-    searchLogo.style.display = "block";
+    searchLogo.style.display = "flex";
 });
 cancelBtnMobile.addEventListener("click", function () {
     searchMobile.classList.remove("mobile-search-active");
     searchMobile.classList.add("mobile-search-deactive");
-    searchLogo.style.display = "block";
+    searchLogo.style.display = "flex";
 });
 
 window.addEventListener("resize", () => {
