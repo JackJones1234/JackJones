@@ -25,6 +25,12 @@
         }
     }
 
+    @keyframes bounce {
+   0%, 20%, 50%, 80%, 100% {transform: translateY(0) rotateX(0deg);} 
+   40% {transform: translateY(-200px) rotateX(130deg);} 
+   60% {transform: translateY(-100px) rotateX(270deg);} 
+} 
+
     body {
         background: url('../../../images/swamp.png') no-repeat center;
         background-size: cover;
@@ -38,7 +44,21 @@
         text-align: center;
     }
     .shrek{
-        animation: 8s infinite rotate;
+        animation: 6s infinite rotate;
+        user-select: none;
+        position: relative;
+    }
+
+    .shrek button{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%, -50%);
+        padding: 20px;
+        font-size: 40px;
+        cursor: pointer;
+        animation: 2s infinite bounce;
+        user-select: none;
     }
 
     .shrek img {
@@ -50,6 +70,8 @@
 </head>
 <body>
     <h1>Get out of my swamp !!!</h1>
-    <div class="shrek"><img src="../../../images/shrek.png" alt="shrek"></div>
+    <div class="shrek"><img src="../../../images/shrek.png" alt="shrek">
+        <a href="{{url('')}}"><button>Products page</button></a>
+    </div>
 </body>
 </html>
