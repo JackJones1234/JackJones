@@ -24,6 +24,8 @@ Route::get('/', [HomeController::class, 'index'])->name('login');
 
 Route::get('/product/{id}', [\App\Http\Controllers\ProductController::class, 'index']);
 
+Route::post('/search', [\App\Http\Controllers\ProductController::class, 'search']);
+
 Route::match(['GET', 'POST'],'/cart', [CartController::class, 'index']);
 Route::post('/cart/edit', [CartController::class, 'edit']);
 Route::get('/cart', [CartController::class, 'index']);
