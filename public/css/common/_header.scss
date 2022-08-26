@@ -159,6 +159,14 @@ header {
             display: flex;
             align-items: center;
 
+            .search-form-deactive {
+                display: none;
+            }
+
+            .search-form-active {
+                display: block;
+            }
+
             ul {
                 display: flex;
                 padding: 0;

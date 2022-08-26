@@ -11,7 +11,6 @@ class HomeController extends Controller
 {
     public function index(Request $request)
     {
-        setcookie("Auction_Item", "Luxury Car", time() + 2 * 24 * 60 * 60);
         $products = Product::all();
         if(!isset($_COOKIE['cart'])) { //if cookie is not set, it gets set
             return response()

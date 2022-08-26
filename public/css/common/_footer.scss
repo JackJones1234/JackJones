@@ -31,14 +31,26 @@
 
     }
     @include for-tablet-portrait-up {
-        flex-direction: row;
-        align-items:flex-start;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 25px;
     }
+    .before-footer-display-none{
+        @include for-tablet-portrait-up {
+            display: none;
+        }
+    }
+
+    .logo{
+        width: 90px;
+        height: 22px;
+        margin: 20px 0;
+        background-image: url(../../images/logo.svg);
+        @include for-tablet-portrait-down {
+            display: none;
+        }
+    }
 }
-
-
-
 
 .footer-bottom {
 

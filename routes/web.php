@@ -40,7 +40,20 @@ Route::post('/admin/login', [AdminController::class, 'login']);
 Route::post('/admin/product/store', [ProductController::class, 'store']);
 Route::get('/admin/product/edit/{id}', [ProductController::class, 'edit']);
 Route::post('/admin/product/delete', [ProductController::class, 'delete']);
+
+// Route::get('/admin/product/delete', function() {
+//     return view(''));
+// });
+
+// Route::get('/admin/product/store', function() {
+//     return redirect(url('/asdasd'));
+// });
+
 Route::post('/admin/product/edit', [ProductController::class, 'storeEdit']);
 
 Route::get('/checkout', [CheckoutController::class, 'index']);
+
+Route::fallback(function() {
+    return abort(404);
+});
 
