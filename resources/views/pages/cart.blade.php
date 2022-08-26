@@ -1,5 +1,6 @@
 @extends('layout.master')
 
-@section('content')
+@section('container')
+
     @include('common.cart')
 @endsection
