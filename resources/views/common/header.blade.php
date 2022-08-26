@@ -56,24 +56,25 @@
 
     </nav>
     <hr>
-</header>
-<div class="mobile-search mobile-search-deactive">
-    <form action="/search" method="POST" class="search-form-deactive" id="search-form">
-        @csrf
-        <input class="search-bar" type="text" placeholder="search" name="search">
-        <input class="search-submit" type="submit" value="submit">
-        <input class="search-cancel" type="button" value="cancel" id="cancelMobile">
-    </form>
-</div>
-<div class="mobile-nav hide-menu hide-menu-visually">
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="#">indoor<img src="{{ asset('icons/arrow-right.svg') }}" alt="navSpan" class="nav-span"></a></li>
-            <li><a href="#">outdoor<img src="{{ asset('icons/arrow-right.svg') }}" alt="navSpan" class="nav-span"></a></li>
-            <li><a href="#">lookbook</a></li>
-        </ul>
+    
+    <div class="mobile-search mobile-search-deactive">
+        <form action="/search" method="POST" class="search-form-deactive" id="search-form">
+            @csrf
+            <input class="search-bar" type="text" placeholder="search" name="search">
+            <input class="search-submit" type="submit" value="submit">
+            <input class="search-cancel" type="button" value="cancel" id="cancelMobile">
+        </form>
     </div>
-</div>
+    <div class="mobile-nav hide-menu hide-menu-visually">
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#">indoor<img src="{{ asset('icons/arrow-right.svg') }}" alt="navSpan" class="nav-span"></a></li>
+                <li><a href="#">outdoor<img src="{{ asset('icons/arrow-right.svg') }}" alt="navSpan" class="nav-span"></a></li>
+                <li><a href="#">lookbook</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
 
 <script src="{{ asset('js/navigation.js')}}"></script>
 <script src="{{ asset('js/search.js') }}"></script>
