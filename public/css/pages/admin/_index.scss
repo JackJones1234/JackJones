@@ -13,20 +13,27 @@
     table {
         border-spacing: 10px;
         min-width: 100%;
+        font-size: 20px;
     }
-    table tr {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 
+    table th {
+        text-align: start;
+        margin-bottom: 10px;
+    }
+
+    table tr {
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        // padding: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .form-wrapper {
         display: flex;
-        flex-direction: row-reverse;
         align-items: center;
-        justify-content: space-between;
-        gap: 20px;
+        gap: 12px;
     }
     
     tbody{

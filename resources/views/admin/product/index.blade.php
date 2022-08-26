@@ -21,12 +21,12 @@
                     <td>{{ $product->price }}</td>
                     <td>
                         <div class="form-wrapper">
+                            <button class="button-light" onclick="location.href='/admin/product/edit/{{ $product->id }}'">Edit</button>
                             <form action="/admin/product/delete" method="POST">
                                 @csrf
                                 <input class="button-dark" type="submit" value="Delete">
                                 <input type="hidden" name='product_id' value={{ $product->id }}>
                             </form>
-                            <button class="button-light" onclick="location.href='/admin/product/edit/{{ $product->id }}'">Edit</button>
                         </div>
                     </td>
                 </tr>
