@@ -25,6 +25,12 @@
         font-size: 0.8125rem;
         padding: 0.78125rem 0;
         color: $color-black;
+
+        div{
+            .product-name{
+                text-transform: capitalize;
+            }
+        }
     }
 
     .cart-head {
