@@ -1,0 +1,111 @@
+.main-container{
+    h1{
+        font-weight: 500;
+    }
+    h1::first-letter{
+        text-transform: uppercase;
+    }
+
+    .delivery-wrapper{
+
+
+        form{
+            margin: 20px 0;
+            input{
+                width: 100%;
+                border: 1px solid rgb(226, 226, 226);
+                background: none;
+                padding: 10px 5%;
+                margin: 4px 0;
+            }
+            .customer-name{
+                display: flex;
+                justify-content: space-between;
+                input{
+                    width: 49%;
+                    border: 1px solid rgb(226, 226, 226);
+                    background: none;
+                    padding: 10px 5%;
+                }
+            }
+            .contact-info{
+                display: flex;
+                justify-content: space-between;
+                input{
+                    width: 49%;
+                    border: 1px solid rgb(226, 226, 226);
+                    background: none;
+                    padding: 10px 5%;
+                }
+            }
+            
+        }
+    }
+
+    .cart-wrapper{
+
+        .cart-container{
+        
+        }
+
+        .cart-product-container{
+            min-width: 60%;
+            margin: auto;
+
+            div{
+                margin:0 10px;
+            }
+            form{
+                .update, .delete{
+                    // width: 49%;
+                    border: 1px solid rgb(226, 226, 226);
+                    background: none;
+                    padding: 3px 5px;
+                }
+                .delete:hover{
+                    border-color: rgb(255, 176, 176);
+                    transition: all 0.3s linear;
+                }
+                .update:hover{
+                    border-color: rgb(154, 250, 154);
+                    transition: all 0.3s linear;
+                }
+            }
+        }
+    }
+
+    .payment-wrapper{
+       
+
+        .payment-content{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+
+            h1{
+                font-weight: 500;
+            }
+            h1::first-letter{
+                text-transform: uppercase;
+            }
+
+            .payment-method-wrapper{
+                display: block;
+                margin-left: 10px;
+                width: 30%;
+            }
+            .payment-details-wrapper{
+                width: 70%;
+                input{
+                    width: 49%;
+                    border: 1px solid rgb(226, 226, 226);
+                    background: none;
+                    padding: 10px 5%;
+                }
+                .card-expire-date{
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
