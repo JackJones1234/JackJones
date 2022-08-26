@@ -1,9 +1,52 @@
-footer {
+.before-footer-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    justify-content: space-between;
+    border-top: 1px solid $color-lines;
+    ul{
+        font-family: Assistant-Regular;
+        font-size: 1.125rem;
+        list-style: none;
+        text-transform: capitalize;
+        padding: 15px 0;
+        line-height: 250%;
+        a{
+            font-family: Assistant-Regular;
+            font-size: 0.875rem;
+            text-decoration:none;
+            line-height: 300%;
+            &:link, &:visited, &:active{
+                color: $color-black;
+            }
+        }
+    }
+    li{
+        font-family: Assistant-Regular;
+        font-size: 0.875rem;
+        line-height: 250%;
+        &::first-letter{
+            text-transform: capitalize;
+        }
+
+    }
+    @include for-tablet-portrait-up {
+        flex-direction: row;
+        align-items:flex-start;
+        gap: 25px;
+    }
+}
+
+
+
+
+.footer-bottom {
+
     padding: 65px 5%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    border-top: 1px solid #d0d0d0;
+    border-top: 1px solid $color-lines;
     color: #121212bf;
 
     @include for-tablet-portrait-down {
@@ -41,6 +84,12 @@ footer {
                 background-repeat: no-repeat;
                 background-position-x: 95%;
                 background-position-y: center;
+                outline: none;
+
+                &:active {
+                    border-color: $color-secondary;
+                    outline: 1px solid $color-secondary;
+                }
             }
         }
     }

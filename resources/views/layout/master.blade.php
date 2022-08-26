@@ -11,6 +11,7 @@
     @include('common.footer')
 </body>
 
+{{-- TODO: import from js file --}}
 <script>
     // make page span full height if not enough content (footer at bottom)
 window.addEventListener("load", () => {
