@@ -17,15 +17,16 @@ body {
 
 .product-card {
     text-align: center;
-    background-color: rgb(196, 230, 233);
+    background-color: $color-secondary;
     border-radius: 5px;
-    box-shadow: 5px 5px 10px rgb(172, 170, 170);
+    // box-shadow: 5px 5px 10px rgb(172, 170, 170);
+    box-shadow: 5px 5px 10px $color-third;
     cursor: pointer;
 
     img {
         width: 100%;
         min-height: 200px;
-        border-radius: 5px;
+        border-radius: 5px 5px 0 0;
     }
     .product-info {
         padding: 12px;
