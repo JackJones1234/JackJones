@@ -41,7 +41,7 @@ class ProductController extends Controller
         try {
             $file= $request->file('product_image');
             $model->img = $file->getClientOriginalName();
-            $file->move(public_path('images/product'), $file->getClientOriginalName());
+            $file->move(public_path('images/product/tablelamps'), $file->getClientOriginalName());
         } catch(Exception $e) {
             echo $e->getMesssage();
         }

@@ -16,6 +16,7 @@
     </div>
 
     <a class="go-home" href="{{url('')}}" aria-label="go to storefront">Go to storefront <img src="{{ asset('icons/arrow-right.svg') }}"></a>
+    <a class="go-home" href="{{url('/admin/product')}}" aria-label="go to storefront">Go to products <img src="{{ asset('icons/arrow-right.svg') }}"></a>
 </div>
     @if(session()->has('message'))
     <div>{{ session()->get('message') }}</div>
