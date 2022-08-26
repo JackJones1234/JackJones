@@ -49,7 +49,7 @@
                     @csrf
                     <input type="text" placeholder="search" name="search">
                     <input type="submit" value="submit">
-                    <input type="button" value="cancel" name="cancel">
+                    <input type="button" value="cancel" id="cancel">
                 </form>
                 <li><a href="/cart"><img src="{{ asset('icons/cart_empty.svg') }}" alt="shopping cart"></a></li>
             </ul>

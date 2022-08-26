@@ -10,7 +10,7 @@
     </div>
     @foreach($products as $product)
         <div class="cart-product-container">
-            <div>Name: {{ $product['product']->name }}</div>
+            <div>Name: <span class="product-name">{{ $product['product']->name }}</span></div>
             <div class="quantity">Quantity: {{ $product['quantity'] }}</div>
             <div class="price">Price for 1: {{ $product['product']->price }}</div>
             <form action="">

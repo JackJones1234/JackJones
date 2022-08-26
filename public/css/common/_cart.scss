@@ -25,6 +25,26 @@
         font-size: 0.8125rem;
         padding: 0.78125rem 0;
         color: $color-black;
+
+        form{
+            
+            .update, .delete{
+                background: none;
+                padding: 3px 5px;
+                font-family: Assistant-Regular;
+                font-style: normal;
+                font-weight: 400;
+            }
+            .delete{
+                background-color: black;
+                border: 2px solid black;
+                color: white;
+            }
+            .update{
+                border: 2px solid black;
+                background-color: none;
+            }
+        }
     }
 
     .cart-head {

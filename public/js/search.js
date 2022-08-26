@@ -13,3 +13,14 @@ cancelBtn.addEventListener('click', function() {
     searchForm.classList.remove('search-form-active');
     searchLogo.style.display = "block";
 })
+
+// searchForm.addEventListener('submit', function(e) {
+//     e.preventDefault();
+//     fetch('/search', {
+//         method: 'POST',
+//         body: new FormData(searchForm)
+//     })
+//     .then(response => response.json())
+//     .then(data => console.log(data['result']))
+//     .catch()
+// })
