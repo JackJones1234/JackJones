@@ -13,6 +13,8 @@
         <ul class="before-footer-display-none">our mission
             <li>Quality materials, good designs, craftsmanship and sustainability.</li>
         </ul>
+        <div class="logo"></div>
+
     </div>
     <div class="footer-bottom">
         {{-- selects --}}
