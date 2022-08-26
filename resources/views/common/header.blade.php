@@ -63,3 +63,4 @@
 </div>
 
 <script src="{{ asset('js/navigation.js')}}"></script>
+<script src="{{ asset('js/search.js') }}"></script>
