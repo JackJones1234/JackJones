@@ -1,6 +1,5 @@
 @extends('layout.master')
 
-
 @section('content')
     <div class="delivery-wrapper">
         <h1>delivery options</h1>

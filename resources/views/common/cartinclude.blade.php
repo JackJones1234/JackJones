@@ -1,3 +1,4 @@
+@section('content')
 
 <div class="cart-container">
     <div class="cart-head">
@@ -34,3 +35,5 @@
 <script src="{{ asset('js/cart/cart.js') }}"></script>
 
 
+
+@endsection
